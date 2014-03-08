@@ -226,9 +226,7 @@ else
       <div class="header-middle"> 
 
 
-<div class="worldsmessage"> 
-<a  href=http://www.sinkspots.org/worlds2011/weasel_gathering.php.htm target=_blank >2011 Mystery Move Worlds @ The Weasel!</a>
-</div> 
+ 
    
         <!-- Site message -->
          
