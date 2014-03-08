@@ -1,0 +1,81 @@
+2011-11-22 05:56:18
+-------------------
+(live transaction) --> https://api-3t.paypal.com/nvp
+Request Headers: 
+Array
+(
+    [0] => Content-Type: text/namevalue
+    [1] => X-VPS-Timeout: 45
+    [2] => X-VPS-VIT-Client-Type: PHP/cURL
+    [3] => X-VPS-VIT-Integration-Product: PHP::Zen Cart(tm) - PayPal/NVP
+    [4] => X-VPS-VIT-Integration-Version: 1.3.9f
+)
+
+
+Request Parameters: {GetExpressCheckoutDetails} 
+Array
+(
+    [TOKEN] => EC-7E409076G5418064N
+    [REQBILLINGADDRESS] => 1
+    [METHOD] => GetExpressCheckoutDetails
+    [USER] => sinkspots_api1.yahoo.com
+    [PWD] => ****************
+    [VERSION] => 60.0
+    [SIGNATURE] => ****************************************************SzWr
+)
+
+
+Response: 
+Array
+(
+    [TOKEN] => EC-7E409076G5418064N
+    [CHECKOUTSTATUS] => PaymentActionNotInitiated
+    [TIMESTAMP] => 2011-11-22T17:56:18Z
+    [CORRELATIONID] => e0361a56cd7a
+    [ACK] => Success
+    [VERSION] => 60.0
+    [BUILD] => 2271164
+    [EMAIL] => riotboo@gmail.com
+    [PAYERID] => E9QR663XFP9P4
+    [PAYERSTATUS] => verified
+    [FIRSTNAME] => Suzanne
+    [LASTNAME] => Burgess
+    [COUNTRYCODE] => US
+    [SHIPTONAME] => Suzanne Burgess
+    [SHIPTOSTREET] => 1520 Fork Ave
+    [SHIPTOCITY] => Irmo
+    [SHIPTOSTATE] => SC
+    [SHIPTOZIP] => 29063
+    [SHIPTOCOUNTRYCODE] => US
+    [SHIPTOCOUNTRYNAME] => United States
+    [ADDRESSSTATUS] => Confirmed
+    [CURRENCYCODE] => USD
+    [AMT] => 5.00
+    [ITEMAMT] => 5.00
+    [SHIPPINGAMT] => 0.00
+    [HANDLINGAMT] => 0.00
+    [TAXAMT] => 0.00
+    [INSURANCEAMT] => 0.00
+    [SHIPDISCAMT] => 0.00
+    [L_NAME0] => Id Rather Be Under Water
+    [L_NAME1] => My Other Boat Sinks
+    [L_QTY0] => 3
+    [L_QTY1] => 2
+    [L_TAXAMT0] => 0.00
+    [L_TAXAMT1] => 0.00
+    [L_AMT0] => 1.00
+    [L_AMT1] => 1.00
+    [L_ITEMWEIGHTVALUE0] =>    0.00000
+    [L_ITEMWEIGHTVALUE1] =>    0.00000
+    [L_ITEMLENGTHVALUE0] =>    0.00000
+    [L_ITEMLENGTHVALUE1] =>    0.00000
+    [L_ITEMWIDTHVALUE0] =>    0.00000
+    [L_ITEMWIDTHVALUE1] =>    0.00000
+    [L_ITEMHEIGHTVALUE0] =>    0.00000
+    [L_ITEMHEIGHTVALUE1] =>    0.00000
+    [CURL_ERRORS] => 
+)
+
+
+GetExpressCheckoutDetails, Elapsed: 466ms -- Success
+

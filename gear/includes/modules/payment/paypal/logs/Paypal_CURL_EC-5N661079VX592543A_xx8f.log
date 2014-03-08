@@ -1,0 +1,73 @@
+2012-05-06 03:01:37
+-------------------
+(live transaction) --> https://api-3t.paypal.com/nvp
+Request Headers: 
+Array
+(
+    [0] => Content-Type: text/namevalue
+    [1] => X-VPS-Timeout: 45
+    [2] => X-VPS-VIT-Client-Type: PHP/cURL
+    [3] => X-VPS-VIT-Integration-Product: PHP::Zen Cart(tm) - PayPal/NVP
+    [4] => X-VPS-VIT-Integration-Version: 1.3.9f
+)
+
+
+Request Parameters: {GetExpressCheckoutDetails} 
+Array
+(
+    [TOKEN] => EC-5N661079VX592543A
+    [REQBILLINGADDRESS] => 1
+    [METHOD] => GetExpressCheckoutDetails
+    [USER] => sinkspots_api1.yahoo.com
+    [PWD] => ****************
+    [VERSION] => 60.0
+    [SIGNATURE] => ****************************************************SzWr
+)
+
+
+Response: 
+Array
+(
+    [TOKEN] => EC-5N661079VX592543A
+    [CHECKOUTSTATUS] => PaymentActionNotInitiated
+    [TIMESTAMP] => 2012-05-06T15:01:37Z
+    [CORRELATIONID] => b796e56cac05f
+    [ACK] => Success
+    [VERSION] => 60.0
+    [BUILD] => 2860716
+    [EMAIL] => mintyleaf99@hotmail.com
+    [PAYERID] => 2F3VZML5QYB8E
+    [PAYERSTATUS] => verified
+    [FIRSTNAME] => joshua
+    [LASTNAME] => dalton
+    [COUNTRYCODE] => US
+    [SHIPTONAME] => joshua dalton
+    [SHIPTOSTREET] => 311 happy valley rd.
+    [SHIPTOCITY] => johnson city
+    [SHIPTOSTATE] => TN
+    [SHIPTOZIP] => 37601
+    [SHIPTOCOUNTRYCODE] => US
+    [SHIPTOCOUNTRYNAME] => United States
+    [ADDRESSSTATUS] => Confirmed
+    [CURRENCYCODE] => USD
+    [AMT] => 3.00
+    [ITEMAMT] => 3.00
+    [SHIPPINGAMT] => 0.00
+    [HANDLINGAMT] => 0.00
+    [TAXAMT] => 0.00
+    [INSURANCEAMT] => 0.00
+    [SHIPDISCAMT] => 0.00
+    [L_NAME0] => Sinking Guy
+    [L_QTY0] => 3
+    [L_TAXAMT0] => 0.00
+    [L_AMT0] => 1.00
+    [L_ITEMWEIGHTVALUE0] =>    0.00000
+    [L_ITEMLENGTHVALUE0] =>    0.00000
+    [L_ITEMWIDTHVALUE0] =>    0.00000
+    [L_ITEMHEIGHTVALUE0] =>    0.00000
+    [CURL_ERRORS] => 
+)
+
+
+GetExpressCheckoutDetails, Elapsed: 461ms -- Success
+

@@ -1,0 +1,25 @@
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.// DTD Web Application 1.2//EN" "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+<web-app>
+
+<servlet>
+    <servlet-name>soap</servlet-name>
+    <servlet-class>com.mapquest.JSReqHandler</servlet-class>
+    <init-param>
+         <param-name>ClientId</param-name>
+         <param-value>Your_ClientId</param-value>
+    </init-param>
+    <init-param>
+         <param-name>Password</param-name>
+         <param-value>Your_Password</param-value>
+    </init-param>
+
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>soap</servlet-name>
+    <url-pattern>/JSReqHandler</url-pattern>
+</servlet-mapping>
+ 
+
+ 
+</web-app>

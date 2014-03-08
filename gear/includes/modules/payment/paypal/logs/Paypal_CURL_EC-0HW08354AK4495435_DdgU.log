@@ -1,0 +1,78 @@
+2012-02-13 08:14:20
+-------------------
+(live transaction) --> https://api-3t.paypal.com/nvp
+Request Headers: 
+Array
+(
+    [0] => Content-Type: text/namevalue
+    [1] => X-VPS-Timeout: 45
+    [2] => X-VPS-VIT-Client-Type: PHP/cURL
+    [3] => X-VPS-VIT-Integration-Product: PHP::Zen Cart(tm) - PayPal/NVP
+    [4] => X-VPS-VIT-Integration-Version: 1.3.9f
+)
+
+
+Request Parameters: {DoExpressCheckoutPayment} 
+Array
+(
+    [AMT] => 1.00
+    [ITEMAMT] => 1.00
+    [L_NUMBER0] => 
+    [L_NAME0] => Charcing In Charcing Out
+    [L_AMT0] => 1.00
+    [L_QTY0] => 1
+    [SHIPTONAME] => Marc DiBiase
+    [SHIPTOSTREET] => 4891 Taylor Circle,
+    [SHIPTOSTREET2] => Room #3309
+    [SHIPTOCITY] => Collegedale
+    [SHIPTOSTATE] => TN
+    [SHIPTOZIP] => 37315
+    [SHIPTOCOUNTRYCODE] => US
+    [BUTTONSOURCE] => ZenCart-EC_us
+    [RETURNFMFDETAILS] => 0
+    [CUSTOM] => EC-8-1329164056
+    [INVNUM] => 8-1329164056-[MysteryGear]
+    [TOKEN] => EC-0HW08354AK4495435
+    [PAYERID] => LTF7GW7FBD856
+    [PAYMENTACTION] => Sale
+    [NOTIFYURL] => http://www.sinkspots.org/gear/ipn_main_handler.php
+    [METHOD] => DoExpressCheckoutPayment
+    [CURRENCYCODE] => USD
+    [USER] => sinkspots_api1.yahoo.com
+    [PWD] => ****************
+    [VERSION] => 60.0
+    [SIGNATURE] => ****************************************************SzWr
+)
+
+
+Response: 
+Array
+(
+    [TOKEN] => EC-0HW08354AK4495435
+    [SUCCESSPAGEREDIRECTREQUESTED] => true
+    [TIMESTAMP] => 2012-02-13T20:14:20Z
+    [CORRELATIONID] => bd5ff8f766cf0
+    [ACK] => Success
+    [VERSION] => 60.0
+    [BUILD] => 2515991
+    [TRANSACTIONID] => 6XF695084T395401S
+    [RECEIPTID] => 3584-2492-8225-5802
+    [TRANSACTIONTYPE] => cart
+    [PAYMENTTYPE] => instant
+    [ORDERTIME] => 2012-02-13T20:14:19Z
+    [AMT] => 1.00
+    [FEEAMT] => 0.33
+    [TAXAMT] => 0.00
+    [CURRENCYCODE] => USD
+    [PAYMENTSTATUS] => Completed
+    [PENDINGREASON] => None
+    [REASONCODE] => None
+    [PROTECTIONELIGIBILITY] => Eligible
+    [INSURANCEOPTIONSELECTED] => false
+    [SHIPPINGOPTIONISDEFAULT] => false
+    [CURL_ERRORS] => 
+)
+
+
+DoExpressCheckoutPayment, Elapsed: 3557ms -- Success
+

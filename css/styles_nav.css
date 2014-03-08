@@ -1,0 +1,50 @@
+/* --------------------- Accordion Navigation ----------------------------- */
+#accordion { }
+
+#accordion ul {list-style: circle; margin: 0 0 10px 0; padding: 0 0px 0 30px; border:0px solid red;  }
+/*
+#accordion ul li a {font-size: 11px; text-decoration: none; font-weight: normal;}
+#accordion ul li a:hover {background: none; text-decoration: underline;}
+#accordion h3 {margin: 0; padding: 0; position: relative; width: 125px;}
+
+*/
+
+/* -------------- Styles for Image Replacement and Rollovers on Accordion H3s ------------ */
+/*
+#accordion h3 a {display: block; width: 125px; height: 32px; position: relative; background-position: right top; background-repeat: no-repeat; background-color: transparent; margin: 0 0 0 75px; padding: 0; text-indent: -9999px;}
+#accordion h3 a:hover {background-position: left top;}
+
+#accordion h3 a#goods {height: 39px; background-image: url(img/goods.gif);}
+#accordion h3 a#info {background-image: url(img/info.gif);}
+#accordion h3 a#ideas {background-image: url(img/ideas.gif);}
+#accordion h3 a#retailer {background-image: url(img/retailer.gif);}
+#accordion h3 a#finder {background-image: url(img/finder.gif);}
+
+*/
+
+/* the .accordian classes are necessary, but modify as needed, especially .accordian_toggle */		
+.accordion_toggle {
+	display: block;
+
+	padding: 0 10px 0 10px;
+
+	line-height: 30px;
+	color: #ffffff;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	font-size: 12px;
+	color: #000000;
+	cursor: pointer;
+	margin: 0 0 0 0;
+}
+
+
+.accordion_toggle_active {
+}
+
+.accordion_content {
+	overflow: hidden;
+	margin: 0 0 0 0;
+	padding: 0;
+}

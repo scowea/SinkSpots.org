@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+RewriteEngine on
+rewritecond %{http_host} ^(www\.)?sinkspots.com [nc]
+
+rewriterule ^(.*)$ http://www.SinkSpots.org/$1 [r=301,nc] 

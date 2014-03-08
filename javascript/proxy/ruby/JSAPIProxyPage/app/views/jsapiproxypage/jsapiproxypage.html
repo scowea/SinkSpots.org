@@ -1,0 +1,149 @@
+<html class="mqHtml">
+<head>
+<title>MapWare XML TestPage</title>
+<style>
+.loading
+{
+   position:absolute;
+   left:250px;
+   top:350px;
+   z-index:1;
+   color: rgb(0, 0, 0);
+   border:1px solid rgb(0, 0, 0);
+   background-color: rgb(241, 241, 241);
+   font-size: 100%;
+   width:150px;
+   height:100px;
+   visibility: hidden;
+}
+
+</style>
+<script src="mqutils.js"></script>
+</head>
+  <body>
+
+ <div style="padding:5px;">
+       <label for="txServer">Proxy page url:</label>
+       <input tabIndex="2" type="text" style="width:450px;margin-left:20px;" Value = "jsapiproxypage" id="txServer"/>
+       <br/><label for="sname">Server name:</label>
+       <input tabIndex="2"  type="text" style="width:200px;margin-left:32px" Value = "geocode.access.mapquest.com" id="sname"/>
+       <br/><label for="spath">Server path:</label>
+       <input tabIndex="2"  type="text" style="width:100px;margin-left:38px" Value = "mq" id="spath"/>
+       <br/><label for="sport">Server port:</label>
+       <input tabIndex="2"  type="text" style="width:100px;margin-left:39px" Value = "80" id="sport"/>
+       <br/>
+    </div>
+    <div style="padding-bottom:5px;padding-top:20px;">
+       data to send:
+    </div>
+    <div>
+      <textarea rows="18" cols="140" id="taPostData" accessKey="x" name="taPostData" tabindex="1">
+ <Geocode Version="1">
+    <Address>
+       <AdminArea1>US</AdminArea1>
+       <AdminArea2></AdminArea2>
+       <AdminArea3>CO</AdminArea3>
+       <AdminArea4></AdminArea4>
+       <AdminArea5>Denver</AdminArea5>
+       <AdminArea6></AdminArea6>
+       <AdminArea7></AdminArea7>
+       <PostalCode>80203</PostalCode>
+       <Street>P+St</Street>
+    </Address>
+    <AutoGeocodeCovSwitch>
+       <Name>mqgauto</Name>
+       <MaxMatches>0</MaxMatches>
+    </AutoGeocodeCovSwitch>
+    <Authentication Version="2">
+       <TransactionInfo></TransactionInfo>
+    </Authentication>
+ </Geocode>
+       </textarea>
+    </div>
+    <div>
+       <input onclick=ajaxCall() style="margin-top: 10px;" tabIndex="3" type="button" Value = "Send Data" />
+
+    </div>
+    <div style="margin-top:10px;">
+       response:
+    </div>
+    <div>
+       <textarea rows="18" cols="140" style="margin-top: 5px;" id="taResponse" accessKey="x" name="taResponse" tabindex="1"></textarea>
+    </div>
+
+    <div class="loading" id="dvLoading">
+       LOADING......
+    </div>
+
+    <script>
+
+    function ajaxCall() {
+       var dvLoadingObj = document.getElementById('dvLoading');
+       dvLoadingObj.style.visibility="visible";
+
+       var taPostDataObj = document.getElementById('taPostData');
+       var postData = taPostDataObj.value;
+
+       var txServerObj = document.getElementById('txServer');
+       var server = txServerObj.value;
+
+       var txServerName = document.getElementById('sname');
+       var sname = txServerName.value;
+
+       var txServerPath = document.getElementById('spath');
+       var spath = txServerPath.value;
+
+       var txServerPort = document.getElementById('sport');
+       var sport = txServerPort.value;
+
+       var url = server+"?sname="+sname+"&spath="+spath+"&sport="+sport;
+       getXml(url,postData,handleXml);
+
+    }
+
+
+    function getXml(url,postData,callbackFunction) {
+      http_request = false;
+      http_request = mqXMLHttpRequest();
+      http_request.open("POST", url, true);
+      http_request.onreadystatechange = function()
+      {
+         if (http_request.readyState == 4)
+         {
+       if (http_request.status == 200)
+       {
+          xmlString = mqXmlToStr(http_request.responseXML);
+          eval(callbackFunction(xmlString));
+       }
+       else
+       {
+          alert(   "HTTP Status: " + http_request.status +
+                                  " (" + http_request.statusText + ")\n" +
+                                  "Details: \n" + http_request.responseText
+              );
+          var dvLoadingObj = document.getElementById('dvLoading');
+          dvLoadingObj.style.visibility="hidden";
+       }
+         }
+      }
+      http_request.send(postData);
+    }
+
+
+    function handleXml(strXml)
+    {
+
+       var taResponseObj = document.getElementById('taResponse');
+       taResponseObj.value = strXml;
+
+       var dvLoadingObj = document.getElementById('dvLoading');
+       dvLoadingObj.style.visibility="hidden";
+
+    }
+
+
+    </script>
+
+</body>
+
+</html>

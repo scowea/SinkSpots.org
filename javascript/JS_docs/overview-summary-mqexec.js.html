@@ -1,0 +1,1149 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Frameset//EN""http://www.w3.org/TR/REC-html40/frameset.dtd">
+<html>
+<head>
+<title>
+MapQuest Advantage JavaScript API Reference Documentation Overview
+</title>
+<link rel ="stylesheet" type="text/css" href="stylesheet.css" title="Style">
+<script>
+function asd() {
+	
+		parent.document.title="mqexec.js Overview";
+	
+}
+</script>
+</head>
+<body bgcolor="white" onload="asd();">
+
+<!-- ========== START OF NAVBAR ========== -->
+<a name="navbar_top"><!-- --></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan=2 bgcolor="#EEEEFF" class="NavBarCell1">
+<a name="navbar_top_firstrow"><!-- --></a>
+<table border="0" cellpadding="0" cellspacing="3">
+  <tr align="center" valign="top">
+  
+  
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+  <td bgcolor="#FFFFFF" class="NavBarCell1Rev">	&nbsp;<font class="NavBarFont1Rev"><b>File</b></font>&nbsp;</td>
+  
+
+  <td bgcolor="#FFFFFF" class="NavBarCell1"> 	<font class="NavBarFont1">Class</font>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="index-all.html"--><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+  </tr>
+</table>
+</td>
+<td bgcolor="#EEEEFF" align="right" valign="top">
+<em>
+<b>MapQuest Advantage JavaScript API Reference Documentation</b></em>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</font></td>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+  <a href="index.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="overview-summary.html" target="_top"><b>NO FRAMES</b></a>
+&nbsp;&nbsp;
+<script>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+<noscript>
+<a href="allclasses-noframe.html" target=""><b>All Classes</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<!-- =========== END OF NAVBAR =========== -->
+
+<hr>
+<center>
+	
+	   <h2>mqexec.js</h2>
+	
+</center>
+
+	
+
+
+<h4>Summary</h4>
+<p>
+	
+		No overview generated for 'mqexec.js'<BR/><BR/>
+	
+</p>
+
+<hr>
+
+
+    <table border="1" cellpadding="3" cellspacing="0" width="100%">
+    <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+    <td colspan=2><font size="+2">
+    
+        <b>Class Summary</b>
+    
+    </font></td>
+    </tr>
+    
+    <tr bgcolor="white" class="TableRowColor">
+    <td width="15%"><b><a href="MQExec.html">MQExec</a></b></td>
+    <td>Provides communication layer for requests to a server.</td>
+    </tr>
+    
+    </table>
+    <hr/> 
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<!-- ========== END METHOD SUMMARY =========== -->
+
+
+        <pre class="sourceview">try{
+   var testCommons = new MQObject();
+   testCommons = null;
+}catch(error){
+   throw <span class="literal">"You must include mqcommon.js or toolkit api script prior to mqexec.js."</span>;
+}
+<span class="comment">/**
+ * Constructs new MQExec Object
+ *
+ * <span class="attrib">@class</span> Provides communication layer for requests to a server. Most, but
+ * not all, of the functions generate actual requests to the MapQuest
+ * Server. Within the context of this object, a Session object is used
+ * to maintain information concerning the current client's requests.
+ *
+ * <span class="attrib">@param</span> {String/MQExec} strServerNameORmqeObj MapQuest Server name (or) MQExec
+ * object to copy the server information.
+ * <span class="attrib">@param</span> {String} strPathToServer Path to the Server
+ * <span class="attrib">@param</span> {int} nServerPort HTTP Port of the Server
+ * <span class="attrib">@param</span> {String} strProxyServerName Name of the server hosting the Proxy page
+ * <span class="attrib">@param</span> (String} strPathToProxyServerPage Path to the Proxy Server page
+ * <span class="attrib">@param</span> {int} nProxyServerPort Port of the Server hosting the Proxy page
+ *
+ *    strServerName, strPathToServer, and nServerPort are required properties
+ *    that need to be set before the first request. If these properties are not
+ *    specified, the defaults used for initialization are:
+ *
+ *    MapServer = localhost
+ *    PathToServer = mq
+ *    HTTPPort = 80
+ *
+ *    Please Note: These defaults are not likely to match your configuration.
+ *
+ *    If MQExec object is provided as the first parameter, remaining parameters
+ *    will be ignored and server information will be copied from the provided object.
+ *
+ *
+ * <span class="attrib">@see</span> MQDBLayerQueryCollection
+ * <span class="attrib">@see</span> MQDTCollection
+ * <span class="attrib">@see</span> MQFeatureCollection
+ * <span class="attrib">@see</span> MQLocation
+ * <span class="attrib">@see</span> MQLocationCollection
+ * <span class="attrib">@see</span> MQMapState
+ * <span class="attrib">@see</span> MQLatLng
+ * <span class="attrib">@see</span> MQPoint
+ * <span class="attrib">@see</span> MQSession
+ * <span class="attrib">@see</span> MQRouteOptions
+ * <span class="attrib">@see</span> MQRouteResults
+ * <span class="attrib">@see</span> MQGeocodeOptionsCollection
+ * <span class="attrib">@see</span> MQStringCollection
+ * <span class="attrib">@see</span> MQRecordSet
+ * <span class="attrib">@see</span> MQLatLngCollection
+ * <span class="attrib">@see</span> MQPointCollection
+ * <span class="attrib">@see</span> MQSearchCriteria
+ * <span class="attrib">@see</span> MQMapCommand
+ * <span class="attrib">@see</span> MQQualityType
+ * <span class="attrib">@see</span> MQMatchType
+ */</span>
+<span class="reserved">function</span> MQExec ( strServerNameORmqeObj, strPathToServer, nServerPort,
+                  strProxyServerName, strPathToProxyServerPage, nProxyServerPort )
+{
+
+
+   var m_strServerName;
+   var m_strServerPath;
+   var m_nServerPort;
+   var m_strProxyServerPath ;
+   var m_strProxyServerName;
+   var m_nProxyServerPort;
+   var m_lSocketTimeout;
+   var m_strXInfo = <span class="literal">""</span>;
+
+   <span class="reserved">if</span>( typeof strServerNameORmqeObj == <span class="literal">"string"</span> ) {
+      m_strServerName = strServerNameORmqeObj || <span class="literal">"localhost"</span>;
+      m_strServerPath = strPathToServer || <span class="literal">"mq"</span>;
+      m_nServerPort     = nServerPort || 80;
+      m_strProxyServerPath = strPathToProxyServerPage || <span class="literal">""</span>;
+      m_strProxyServerName = strProxyServerName || <span class="literal">""</span>;
+      m_nProxyServerPort   = nProxyServerPort || 0;
+      m_lSocketTimeout = 0;
+
+   } <span class="reserved">else</span> <span class="reserved">if</span>(strServerNameORmqeObj.getClassName() &amp;&amp;
+            strServerNameORmqeObj.getClassName() == <span class="literal">"MQExec"</span> ) {
+      m_strServerName = strServerNameORmqeObj.getServerName();
+      m_strServerPath = strServerNameORmqeObj.getServerPath();
+      m_nServerPort   = strServerNameORmqeObj.getServerPort();
+      m_strProxyServerName = strServerNameORmqeObj.getProxyServerName();
+      m_nProxyServerPort   = strServerNameORmqeObj.getProxyServerPort();
+      m_strProxyServerPath = strServerNameORmqeObj.getProxyServerPath();
+      m_lSocketTimeout  = strServerNameORmqeObj.m_lSocketTimeout;
+   }
+
+
+   <span class="comment">/**
+    * Sets the name of the server which is to be used to satisfy this request.
+    * <span class="attrib">@param</span> {String} strServerName The name of the MapQuest Server which is to
+    * be used to satisfy this request.
+    * <span class="attrib">@type</span>     void
+    */</span>
+
+   <span class="reserved">this</span>.setServerName = <span class="reserved">function</span>(strServerName) {
+      m_strServerName = strServerName;
+
+   };
+
+  <span class="comment">/**
+    * Returns the name of the server which will be used to satisfy this
+    * request.
+    *
+    * <span class="attrib">@return</span>   The name of the server which will be used to satisfy
+    * this request.
+    * <span class="attrib">@type</span>      String
+    */</span>
+
+   <span class="reserved">this</span>.getServerName= <span class="reserved">function</span>() {
+      <span class="reserved">return</span> m_strServerName;
+   };
+
+
+   <span class="comment">/**
+    * Sets the path to the server which is to be used to satisfy this request.
+    *
+    * <span class="attrib">@param</span>   {String}   strServerPath  The path to the server which is to be used
+    * to satisfy this request.
+    * <span class="attrib">@type</span>      void
+    */</span>
+
+   <span class="reserved">this</span>.setServerPath = <span class="reserved">function</span>(strServerPath) {
+      m_strServerPath = strServerPath;
+   };
+
+
+   <span class="comment">/**
+    * Returns the path to the server which will be used to satisfy this
+    * request.
+    *
+    * <span class="attrib">@return</span>  The path to the  server which will be used to satisfy this
+    * request.
+    * <span class="attrib">@type</span>    String
+    */</span>
+
+   <span class="reserved">this</span>.getServerPath= <span class="reserved">function</span>() {
+      <span class="reserved">return</span> m_strServerPath;
+   };
+
+
+   <span class="comment">/**
+    * Sets the port number to the server which is to be used to satisfy this
+    * request.
+    *
+    * <span class="attrib">@param</span>  {int}  nServerPort The port number of the server which is to be
+    *                      used to satisfy this request.
+    * <span class="attrib">@type</span>    void
+    */</span>
+
+   <span class="reserved">this</span>.setServerPort = <span class="reserved">function</span>(nServerPort) {
+      m_nServerPort = nServerPort;
+
+   };
+
+   <span class="comment">/**
+    * Returns the port number of the server which will be used to satisfy
+    * this request.
+    *
+    * <span class="attrib">@return</span>    The port number of the server which will be used to satisfy
+    *            this request.
+    * <span class="attrib">@type</span>    int
+    */</span>
+
+   <span class="reserved">this</span>.getServerPort= <span class="reserved">function</span>() {
+      <span class="reserved">return</span> m_nServerPort;
+   };
+
+
+
+  <span class="comment">/**
+    * Sets the name or IP of the proxy server to connect to.
+    * The name should not contain any leading or trailing slashes ("/").
+    *
+    * <span class="attrib">@param</span>  {String} strProxyServerName The name of the proxy server.
+    * <span class="attrib">@type</span>    void
+    */</span>
+
+   <span class="reserved">this</span>.setProxyServerName = <span class="reserved">function</span>(strProxyServerName) {
+      m_strProxyServerName = strProxyServerName;
+
+   };
+
+  <span class="comment">/**
+    * Returns the name or IP of the proxy server to connect to.
+    *
+    * <span class="attrib">@return</span> The name of the proxy server.
+    * <span class="attrib">@type</span> String
+    */</span>
+
+   <span class="reserved">this</span>.getProxyServerName = <span class="reserved">function</span>() {
+
+      <span class="reserved">return</span> m_strProxyServerName;
+
+   };
+
+   <span class="comment">/**
+    * Sets the path to the proxy server which is to be used to satisfy this request.
+    *
+    * <span class="attrib">@param</span>  (String} strProxyServerPath The path to the server which is to be used
+    * to satisfy this request.
+    * <span class="attrib">@type</span> void
+    */</span>
+
+   <span class="reserved">this</span>.setProxyServerPath = <span class="reserved">function</span>(strProxyServerPath) {
+      m_strProxyServerPath = strProxyServerPath;
+
+   };
+
+
+   <span class="comment">/**
+    * Returns the path to the proxy server page which will be used to satisfy this
+    * request.
+    *
+    * <span class="attrib">@return</span>  The path to the proxy server page which will be used to satisfy this
+    *          request.
+    * <span class="attrib">@type</span>    String
+    */</span>
+
+   <span class="reserved">this</span>.getProxyServerPath = <span class="reserved">function</span>() {
+      <span class="reserved">return</span> m_strProxyServerPath;
+   };
+
+   <span class="comment">/**
+    * Sets the port to connect to the proxy server with.
+    *
+    * <span class="attrib">@param</span> {int}  nProxyServerPort The proxy server port number.
+    * <span class="attrib">@type</span> void
+    */</span>
+
+   <span class="reserved">this</span>.setProxyServerPort = <span class="reserved">function</span>(nProxyServerPort) {
+      m_nProxyServerPort = nProxyServerPort;
+
+   };
+
+   <span class="comment">/**
+    * Returns the port number to connect to the proxy server with.
+    *
+    * <span class="attrib">@return</span> The proxy server port number.
+    * <span class="attrib">@type</span> int
+    */</span>
+
+   <span class="reserved">this</span>.getProxyServerPort = <span class="reserved">function</span>() {
+      <span class="reserved">return</span> m_nProxyServerPort;
+   };
+
+
+   <span class="comment">/**
+    * Sets data to be passed to the server to be logged with any
+    * subsequent requests in the transaction log. (Max 8 characters)
+    *
+    * <span class="attrib">@param</span> {String} strXInfo Transaction Info.
+    *
+    * <span class="attrib">@type</span> void
+    */</span>
+
+   <span class="reserved">this</span>.setTransactionInfo = <span class="reserved">function</span>(strXInfo) {
+      <span class="reserved">if</span> (strXInfo.length &gt; 32)
+         m_strXInfo = strXInfo.substring(0, 32);
+      <span class="reserved">else</span>
+         m_strXInfo = strXInfo;
+
+   };
+
+
+   <span class="comment">/**
+    * Gets data to be passed to the server to be logged with any
+    * subsequent requests in the transaction log.
+    *
+    * <span class="attrib">@return</span> Transaction Information
+    * <span class="attrib">@type</span> String
+    */</span>
+
+   <span class="reserved">this</span>.getTransactionInfo = <span class="reserved">function</span>() {
+      <span class="reserved">return</span> m_strXInfo;
+   };
+
+
+}
+
+   <span class="comment">/* Defined transaction versions */</span>
+   MQExec.<span class="reserved">prototype</span>.ROUTE_VERSION = <span class="literal">"2"</span>;
+   MQExec.<span class="reserved">prototype</span>.SEARCH_VERSION = <span class="literal">"0"</span>;
+   MQExec.<span class="reserved">prototype</span>.GEOCODE_VERSION = <span class="literal">"1"</span>;
+   MQExec.<span class="reserved">prototype</span>.ROUTEMATRIX_VERSION = <span class="literal">"0"</span>;
+   MQExec.<span class="reserved">prototype</span>.GETRECORDINFO_VERSION = <span class="literal">"0"</span>;
+   MQExec.<span class="reserved">prototype</span>.REVERSEGEOCODE_VERSION = <span class="literal">"0"</span>;
+   MQExec.<span class="reserved">prototype</span>.GETSESSION_VERSION = <span class="literal">"1"</span>;
+
+
+   <span class="comment">/**
+    * Prepares request XML data to be sent to the server for a given transaction
+    * and set of request objects.
+    *
+    * <span class="attrib">@param</span> {String} strTransaction Name of the transaction
+    *
+    * <span class="attrib">@param</span> {Array} arrRequest Array of request objects to form the XML
+    *
+    * <span class="attrib">@param</span> {String} strVersion Version of the transaction implementation
+    *
+    * <span class="attrib">@type</span> void
+    *
+    * <span class="attrib">@private</span>
+    */</span>
+   MQExec.<span class="reserved">prototype</span>.getRequestXml = <span class="reserved">function</span>(strTransaction, arrRequest, strVersion) {
+
+      var arrXmlBuf = new Array();
+      var version = strVersion || <span class="literal">"0"</span>;
+      arrXmlBuf.push(<span class="literal">"&lt;?xml version=\"</span>1.0\<span class="literal">" encoding=\"</span>ISO-8859-1\<span class="literal">"?&gt;\n"</span>);
+      arrXmlBuf.push(<span class="literal">"&lt;"</span> + strTransaction + <span class="literal">" Version=\"</span><span class="literal">" + version + "</span>\<span class="literal">"&gt;\n"</span>);
+      <span class="reserved">for</span> (var i=0; i &lt; arrRequest.length; i++) {
+         arrXmlBuf.push(arrRequest[i].saveXml());
+         arrXmlBuf.push(<span class="literal">"\n"</span>);
+      }
+      arrXmlBuf.push(<span class="literal">"&lt;/"</span> + strTransaction + <span class="literal">"&gt;"</span>);
+      <span class="reserved">return</span> arrXmlBuf.join(<span class="literal">""</span>);
+
+   };
+
+  <span class="comment">/**
+    * Performs the given transaction by making AJAX call to the Proxy Server page.
+    *
+    * <span class="attrib">@param</span> {String} strTransaction Name of the transaction
+    *
+    * <span class="attrib">@param</span> {Array} arrRequest Array of request objects
+    *
+    * <span class="attrib">@type</span> void
+    *
+    * <span class="attrib">@private</span>
+    */</span>
+   MQExec.<span class="reserved">prototype</span>.doTransaction = <span class="reserved">function</span>(strTransaction, arrRequest, strVersion ) {
+
+      var xmlDoc;
+      var strResXml;
+      var http_request = mqXMLHttpRequest();
+      var strUrl = <span class="literal">""</span>;
+      arrRequest.push( new MQAuthentication(<span class="reserved">this</span>.getTransactionInfo()));
+      var strReqXml = <span class="reserved">this</span>.getRequestXml(strTransaction, arrRequest, strVersion);
+
+      <span class="reserved">if</span>(<span class="reserved">this</span>.getProxyServerName() != <span class="literal">""</span>) {
+         strUrl += <span class="literal">"http://"</span> + <span class="reserved">this</span>.getProxyServerName();
+         <span class="reserved">if</span>(<span class="reserved">this</span>.getProxyServerPort() != 0) {
+            strUrl += <span class="literal">":"</span> + <span class="reserved">this</span>.getProxyServerPort();
+         }
+         strUrl += <span class="literal">"/"</span>;
+      }
+
+      strUrl += <span class="reserved">this</span>.getProxyServerPath();
+      strUrl += <span class="literal">"?sname="</span> + <span class="reserved">this</span>.getServerName();
+      strUrl += <span class="literal">"&amp;spath="</span> + <span class="reserved">this</span>.getServerPath();
+      strUrl += <span class="literal">"&amp;sport="</span> + <span class="reserved">this</span>.getServerPort();
+      display(<span class="literal">"mqXmlLogs"</span>, <span class="literal">"Request URL: "</span>, strUrl, <span class="literal">"rURL"</span>, <span class="literal">"mqDisplay"</span>);
+      display(<span class="literal">"mqXmlLogs"</span>, <span class="literal">"Request XML: "</span>, strReqXml, <span class="literal">""</span>, <span class="literal">"mqDisplay"</span>);
+
+      http_request.open(<span class="literal">"POST"</span>, strUrl, false);
+      http_request.send(strReqXml);
+      <span class="reserved">if</span> (http_request.status == 200) {
+          xmlDoc= http_request.responseXML;
+      }
+      <span class="reserved">else</span> {
+         alert(   <span class="literal">"HTTP Status: "</span> + http_request.status +
+               <span class="literal">" ("</span> + http_request.statusText + <span class="literal">")\n"</span> +
+               <span class="literal">"Details: \n"</span> + http_request.responseText
+              );
+         xmlDoc = null;
+      }
+      display(<span class="literal">"mqXmlLogs"</span>, <span class="literal">"Response XML: "</span>, mqXmlToStr(xmlDoc), <span class="literal">"resXML"</span>, <span class="literal">"mqDisplay"</span>);
+      <span class="reserved">return</span> xmlDoc;
+   };
+
+
+   <span class="comment">/**
+    * Method to geocode an address or an intersection. Geocode options supply
+    * the QualityType and MatchType.
+    *
+    * <span class="attrib">@param</span> {MQAddress} mqaAddress  The Address object containing the necessary info for
+    * the address.
+    * (Please Note:  This object will not be updated, it is simply used for the request.)
+    *
+    * <span class="attrib">@param</span> {MQLocationCollection} mqlcLocations  The LocationCollection to hold the results of the
+    * geocode.
+    *
+    * <span class="attrib">@param</span> {MQAutoGeocodeCovSwitch/MQGeocodeOptionsCollection} theOptions
+    * The AutoGeocodeCovSwitch or MQGeocodeOptionsCollection to select a set of
+    * options stored on the server.
+    * (Please Note:  This object will not be updated, it is simply used for the request.)
+    *
+    * <span class="attrib">@type</span> void
+    */</span>
+
+   MQExec.<span class="reserved">prototype</span>.geocode = <span class="reserved">function</span>(mqaAddress, mqlcLocations, theOptions) {
+
+      var xmlDoc;
+      var strXml;
+      var arrRequest = new Array();
+
+      <span class="reserved">if</span>(mqaAddress == null || (mqaAddress.getClassName() !== <span class="literal">"MQAddress"</span> &amp;&amp; mqaAddress.getClassName() !== <span class="literal">"MQSingleLineAddress"</span>)) {
+           throw <span class="literal">"Null or Illegal Argument passed for MQAddress"</span>;
+      } <span class="reserved">else</span> {
+           arrRequest.push(mqaAddress);
+      }
+
+      <span class="reserved">if</span>(mqlcLocations == null || mqlcLocations.getClassName() !== <span class="literal">"MQLocationCollection"</span>) {
+           throw <span class="literal">"Null or Illegal Argument passed for MQLocationCollection"</span>;
+      }
+
+      <span class="reserved">if</span>(theOptions != null) {
+         <span class="reserved">if</span>(theOptions.getClassName() !== <span class="literal">"MQAutoGeocodeCovSwitch"</span> &amp;&amp;
+             theOptions.getClassName() !== <span class="literal">"MQGeocodeOptionsCollection"</span> ) {
+            throw <span class="literal">"Illegal Argument passed for Geocode Options"</span>;
+         } <span class="reserved">else</span> {
+            arrRequest.push(theOptions);
+         }
+      }
+
+      mqLogTime(<span class="literal">"MQExec.geocode: Transaction Start"</span>);
+      xmlDoc = <span class="reserved">this</span>.doTransaction(<span class="literal">"Geocode"</span>, arrRequest, <span class="reserved">this</span>.GEOCODE_VERSION);
+      mqLogTime(<span class="literal">"MQExec.geocode: Transaction End"</span>);
+
+      mqLogTime(<span class="literal">"MQExec.geocode: Loading of GeocodeResponse Start"</span>);
+      strXml = mqXmlToStr(mqGetNode(xmlDoc, <span class="literal">"/GeocodeResponse/LocationCollection"</span>));
+      mqlcLocations.loadXml(strXml);
+      mqLogTime(<span class="literal">"MQExec.geocode: Loading of GeocodeResponse End"</span>);
+
+      display(<span class="literal">"results"</span>, <span class="literal">"Response"</span>, mqXmlToStr(xmlDoc), <span class="literal">""</span>, <span class="literal">"mqDisplay"</span>);
+
+   };
+
+
+
+   <span class="comment">/**
+    * Method to batch geocode a collection of locations. Geocode options supply
+    * the QualityType and MatchType.
+    * 
+    * <span class="attrib">@param</span> {MQLocationCollection} mqlcLocations  The LocationCollection containing the
+    * necessary info for the addresses to be geocode.
+    * (Please Note:  This object will not be updated, it is simply used for the request.)
+    *
+    * <span class="attrib">@param</span> {MQLocationCollectionCollection} mqlccLocations  The LocationCollectionCollection
+    * used to hold the results of the geocode.
+    *
+    * <span class="attrib">@param</span> {MQAutoGeocodeCovSwitch/MQGeocodeOptionsCollection} theOptions
+    * The AutoGeocodeCovSwitch or MQGeocodeOptionsCollection to select a set of
+    * options stored on the server.
+    * (Please Note:  This object will not be updated, it is simply used for the request.)
+    *
+    * <span class="attrib">@type</span> void
+    */</span>
+
+   MQExec.<span class="reserved">prototype</span>.batchGeocode = <span class="reserved">function</span>(mqlcLocations, mqlccLocations, theOptions) {
+
+      var xmlDoc;
+      var strXml;
+      var arrRequest = new Array();
+
+      <span class="reserved">if</span>(mqlcLocations == null || mqlcLocations.getClassName() !== <span class="literal">"MQLocationCollection"</span>) {
+           throw <span class="literal">"Null or Illegal Argument passed for MQLocationCollection"</span>;
+      } <span class="reserved">else</span> {
+           arrRequest.push(mqlcLocations);
+      }
+
+      <span class="reserved">if</span>(mqlccLocations == null || mqlccLocations.getClassName() !== <span class="literal">"MQLocationCollectionCollection"</span>) {
+           throw <span class="literal">"Null or Illegal Argument passed for MQLocationCollectionCollection"</span>;
+      }
+
+      <span class="reserved">if</span>(theOptions != null) {
+         <span class="reserved">if</span>(theOptions.getClassName() !== <span class="literal">"MQAutoGeocodeCovSwitch"</span> &amp;&amp;
+             theOptions.getClassName() !== <span class="literal">"MQGeocodeOptionsCollection"</span> ) {
+            throw <span class="literal">"Illegal Argument passed for Geocode Options"</span>;
+         } <span class="reserved">else</span> {
+            arrRequest.push(theOptions);
+         }
+      }
+
+      mqLogTime(<span class="literal">"MQExec.batchGeocode: Transaction Start"</span>);
+      xmlDoc = <span class="reserved">this</span>.doTransaction(<span class="literal">"BatchGeocode"</span>, arrRequest, <span class="reserved">this</span>.GEOCODE_VERSION);
+      mqLogTime(<span class="literal">"MQExec.batchGeocode: Transaction End"</span>);
+
+      mqLogTime(<span class="literal">"MQExec.batchGeocode: Loading of GeocodeResponse Start"</span>);
+      strXml = mqXmlToStr(mqGetNode(xmlDoc, <span class="literal">"/BatchGeocodeResponse/LocationCollectionCollection"</span>));
+      mqlccLocations.loadXml(strXml);
+      mqLogTime(<span class="literal">"MQExec.batchGeocode: Loading of GeocodeResponse End"</span>);
+
+      display(<span class="literal">"results"</span>, <span class="literal">"Response"</span>, mqXmlToStr(xmlDoc), <span class="literal">""</span>, <span class="literal">"mqDisplay"</span>);
+
+   };
+
+
+
+   <span class="comment">/**
+    * Calculates a route using a collection of locations as origin and
+    * destination. These locations can be Address, GeoAddress,
+    * Intersection, or GeoIntersection objects.
+    *
+    * <span class="attrib">@param</span> {MQLocationCollection} mqlcLocations Collection of locations.
+    * (Please Note:  This object will not be updated, it is simply used for the request.)
+    *
+    * <span class="attrib">@param</span> {MQRouteOptions} mqroOptions Route options object, to modify
+    * behavior of route.
+    * (Please Note:  This object will not be updated, it is simply used for the request.)
+    *
+    * <span class="attrib">@param</span> {MQRouteResults} mqrrResults The results of the route request.
+    *
+    * <span class="attrib">@param</span> {String} strSessionUID The unique Session ID.
+    *
+    * <span class="attrib">@param</span> {MQRectLL} mqRectLL The bounding box to provide to the TileMap
+    * ToolKit. This parameter is optional
+    *
+    * <span class="attrib">@type</span> void
+    */</span>
+
+   MQExec.<span class="reserved">prototype</span>.doRoute = <span class="reserved">function</span>(mqlcLocations, mqroOptions, mqrrResults, strSessionUID, mqRectLL) {
+
+      var xmlDoc;
+      var strXml;
+      var arrRequest = new Array();
+
+      <span class="reserved">if</span>(mqlcLocations == null || mqlcLocations.getClassName() !== <span class="literal">"MQLocationCollection"</span>) {
+         throw <span class="literal">"Null or Illegal Argument passed for MQLocationCollection"</span>;
+      } <span class="reserved">else</span> {
+         arrRequest.push(mqlcLocations);
+      }
+      <span class="reserved">if</span>(mqroOptions == null || mqroOptions.getClassName() !== <span class="literal">"MQRouteOptions"</span>) {
+         throw <span class="literal">"Null or Illegal Argument passed for MQRouteOptions"</span>;
+      } <span class="reserved">else</span> {
+         arrRequest.push(mqroOptions);
+      }
+      <span class="reserved">if</span>(mqrrResults == null || mqrrResults.getClassName() !== <span class="literal">"MQRouteResults"</span>) {
+         throw <span class="literal">"Null or Illegal Argument passed for MQRouteResults"</span>;
+      } <span class="reserved">else</span> {
+         var sessionId = strSessionUID || <span class="literal">""</span>;
+         arrRequest.push(new MQXmlNodeObject(<span class="literal">"SessionID"</span>,sessionId) );
+      }
+
+      mqLogTime(<span class="literal">"MQExec.doRoute: Transaction Start"</span>);
+      xmlDoc = <span class="reserved">this</span>.doTransaction(<span class="literal">"DoRoute"</span>, arrRequest, <span class="reserved">this</span>.ROUTE_VERSION);
+      mqLogTime(<span class="literal">"MQExec.doRoute: Transaction End"</span>);
+
+      mqLogTime(<span class="literal">"MQExec.doRoute: Loading of RouteResults Start"</span>);
+      strXml = mqXmlToStr(mqGetNode(xmlDoc, <span class="literal">"/DoRouteResponse/RouteResults"</span>));
+      mqrrResults.loadXml(strXml);
+      mqLogTime(<span class="literal">"MQExec.doRoute: Loading of RouteResults End"</span>);
+
+      display(<span class="literal">"results"</span>, <span class="literal">"Response"</span>, mqXmlToStr(xmlDoc), <span class="literal">""</span>, <span class="literal">"mqDisplay"</span>);
+
+      <span class="reserved">if</span>(mqRectLL !== null &amp;&amp; sessionId !== <span class="literal">""</span>){
+         <span class="reserved">this</span>.getRouteBoundingBoxFromSessionResponse(sessionId, mqRectLL);
+      }
+
+   };
+
+  <span class="comment">/**
+    * Generates a request to the MapQuest server (as specified by the
+    * server name, path, and port number) to create a user Session.
+    * The Session is assigned a unique identifier which is used to
+    * access and update the Session information.
+    *
+    * <span class="attrib">@param</span>  {MQSession} mqsSession Object containing objects for the session.
+    * (Please Note:  This object will not be updated, it is simply used for the request.)
+    *
+    * <span class="attrib">@return</span> The unique Session identifier.
+    *
+    * <span class="attrib">@type</span> String
+    */</span>
+
+   MQExec.<span class="reserved">prototype</span>.createSessionEx = <span class="reserved">function</span>(mqsSession) {
+
+      var xmlDoc;
+      var strSessId;
+      var arrRequest = new Array();
+      <span class="reserved">if</span>(mqsSession == null || mqsSession.getClassName() !== <span class="literal">"MQSession"</span>) {
+         throw <span class="literal">"Null or Illegal Argument passed for MQSession"</span>;
+      } <span class="reserved">else</span> {
+         arrRequest.push(mqsSession);
+      }
+
+      xmlDoc = <span class="reserved">this</span>.doTransaction(<span class="literal">"CreateSession"</span>, arrRequest);
+      strSessId = mqGetNodeText(mqGetNode(xmlDoc, <span class="literal">"/CreateSessionResponse/SessionID"</span>));
+
+      <span class="reserved">return</span> strSessId;
+   };
+
+
+   MQExec.<span class="reserved">prototype</span>.getSession = <span class="reserved">function</span>(strSessionID, mqObj) {
+
+      <span class="comment">// TO-DO: do class name validations.</span>
+      var xmlDoc;
+      var strXml;
+      var sessionId = strSessionID || <span class="literal">""</span>;
+      var arrRequest = new Array();
+      arrRequest.push(new MQXmlNodeObject(<span class="literal">"SessionID"</span>,sessionId) );
+
+      xmlDoc = <span class="reserved">this</span>.doTransaction(<span class="literal">"GetSession"</span>, arrRequest, <span class="reserved">this</span>.GETSESSION_VERSION);
+      <span class="reserved">if</span>(mqObj.getClassName()===<span class="literal">"MQMapState"</span>){
+         strXml = mqXmlToStr(mqGetNode(xmlDoc, <span class="literal">"/GetSessionResponse/Session/MapState"</span>));
+         mqObj.loadXml(strXml);
+      } <span class="reserved">else</span> <span class="reserved">if</span>(mqObj.getClassName()===<span class="literal">"MQSession"</span>){
+         strXml = mqXmlToStr(mqGetNode(xmlDoc, <span class="literal">"/GetSessionResponse/Session"</span>));
+         mqObj.loadXml(strXml);
+      }
+   };
+
+
+   <span class="comment">/**
+    * Calculates a route matrix. Either a drive time (many-to-many) or a
+    * multi-destination (one-to-many) route.
+    *
+    * <span class="attrib">@param</span>  {MQLocationCollection} mqlcLocations Collection of location objects.
+    * The first member of the collection is the origin. If allToAll is true then
+    * the last member is the destination. Each location must be a GeoAddress
+    * (Please Note:  This object will not be updated, it is simply used for the request.)
+    *
+    * <span class="attrib">@param</span>  {boolean} bAllToAll If true then a matrix of time and distance from
+    * each location to all others is found. If false, time and distance from the
+    * first location (origin) to all others is found.
+    *
+    * <span class="attrib">@param</span>  {MQRouteOptions} mqroOptions Specifies options for the route (fastest vs.
+    * shortest, coverage to use, roads to avoid, etc.).
+    * (Please Note:  This object will not be updated, it is simply used for the request.)
+    *
+    * <span class="attrib">@param</span>  {MQRouteMatrixResults} mqrmrResults Contains the time and distance matrix as
+    * well as the status of the call (success, failure, partial success)
+    *
+    * <span class="attrib">@type</span> void
+    *
+    */</span>
+
+   MQExec.<span class="reserved">prototype</span>.doRouteMatrix = <span class="reserved">function</span>(mqlcLocations, bAllToAll, mqroOptions, mqrmrResults) {
+
+      var xmlDoc;
+      var strXml;
+      var arrRequest = new Array();
+
+      <span class="reserved">if</span>(mqlcLocations == null || mqlcLocations.getClassName() !== <span class="literal">"MQLocationCollection"</span>) {
+           throw <span class="literal">"Null or Illegal Argument passed for MQLocationCollection"</span>;
+      } <span class="reserved">else</span> {
+           arrRequest.push(mqlcLocations);
+      }
+      <span class="reserved">if</span>( bAllToAll == null || typeof bAllToAll != <span class="literal">"boolean"</span>) {
+           throw <span class="literal">"Null or Illegal Argument passed for bAllToAll"</span>;
+      } <span class="reserved">else</span> {
+           var iAllToAll = bAllToAll ? 1 : 0;
+           arrRequest.push(new MQXmlNodeObject(<span class="literal">"AllToAll"</span>, iAllToAll));
+      }
+      <span class="reserved">if</span>(mqroOptions == null || mqroOptions.getClassName() !== <span class="literal">"MQRouteOptions"</span>) {
+           throw <span class="literal">"Null or Illegal Argument passed for MQRouteOptions"</span>;
+      } <span class="reserved">else</span> {
+           arrRequest.push(mqroOptions);
+      }
+      <span class="reserved">if</span>(mqrmrResults == null || mqrmrResults.getClassName() !== <span class="literal">"MQRouteMatrixResults"</span>) {
+           throw <span class="literal">"Null or Illegal Argument passed for MQRouteMatrixResults"</span>;
+      }
+
+      mqLogTime(<span class="literal">"MQExec.doRoute: Transaction Start"</span>);
+      xmlDoc = <span class="reserved">this</span>.doTransaction(<span class="literal">"DoRouteMatrix"</span>, arrRequest, <span class="reserved">this</span>.ROUTEMATRIX_VERSION);
+      mqLogTime(<span class="literal">"MQExec.doRoute: Transaction End"</span>);
+
+      mqLogTime(<span class="literal">"MQExec.doRoute: Loading of RouteResults Start"</span>);
+      strXml = mqXmlToStr(mqGetNode(xmlDoc, <span class="literal">"/DoRouteMatrixResponse/RouteMatrixResults"</span>));
+      mqrmrResults.loadXml(strXml);
+      mqLogTime(<span class="literal">"MQExec.doRoute: Loading of RouteResults End"</span>);
+
+      display(<span class="literal">"results"</span>, <span class="literal">"Response"</span>, mqXmlToStr(xmlDoc), <span class="literal">""</span>, <span class="literal">"mqDisplay"</span>);
+
+   };
+
+
+   <span class="comment">/**
+    * Generates a request to the MapQuest server (as specified by the server
+    * name, path, and port number) to perform a DB Search based on either the
+    * recordIds received or the extraCriteria info of the dblayerquery. The
+    * resulting recordset contains fields specified by the scFieldNames param.
+    *
+    * <span class="attrib">@param</span>  {MQStringCollection} mqscFieldNames containing the names of the fields
+    * to return, or blank for all fields.
+    * (Please Note:  This object will not be updated, it is simply used for the request.)
+    *
+    * <span class="attrib">@param</span>  {MQDBLayerQuery} mqdlqQuery  Contains the name of the dblayer/table to query.
+    * Optionally contains ExtraCriteria.  Utilized only if RecordIds are empty.
+    * (Please Note:  This object will not be updated, it is simply used for the request.)
+    *
+    * <span class="attrib">@param</span> {MQRecordSet}  mqrsResults  The Returned RecordSet containg the records and
+    * fields matching the input parameters.
+    *
+    * <span class="attrib">@param</span>  {MQStringCollection} mqscRecIds  RecordIdentifiers of the records to return
+    * stored in a StringCollection.
+    * (Please Note:  This object will not be updated, it is simply used for the request.)
+    *
+    * <span class="attrib">@type</span> void
+    *
+    */</span>
+
+   MQExec.<span class="reserved">prototype</span>.getRecordInfo = <span class="reserved">function</span>(mqscFieldNames, mqdlqQuery, mqrsResults, mqscRecIds) {
+
+      var xmlDoc;
+      var strXml;
+      var arrRequest = new Array();
+
+      <span class="reserved">if</span>( mqscFieldNames == null || mqscFieldNames.getClassName() !== <span class="literal">"MQStringCollection"</span> ) {
+           throw <span class="literal">"Null or Illegal Argument passed for MQStringCollection"</span>;
+      } <span class="reserved">else</span> {
+            var fields = new MQStringCollection();
+            fields.setM_Xpath(<span class="literal">"Fields"</span>);
+            fields.append(mqscFieldNames);
+            arrRequest.push(fields);
+      }
+      <span class="reserved">if</span>( mqdlqQuery == null || mqdlqQuery.getClassName() !== <span class="literal">"MQDBLayerQuery"</span> ) {
+           throw <span class="literal">"Null or Illegal Argument passed for MQDBLayerQuery"</span>;
+      } <span class="reserved">else</span> {
+           arrRequest.push(mqdlqQuery);
+      }
+      <span class="reserved">if</span>( mqrsResults == null || mqrsResults.getClassName() !== <span class="literal">"MQRecordSet"</span> ) {
+           throw <span class="literal">"Null or Illegal Argument passed for MQRecordSet"</span>;
+      }
+      <span class="reserved">if</span>( mqscRecIds == null || mqscRecIds.getClassName() !== <span class="literal">"MQStringCollection"</span>) {
+           throw <span class="literal">"Null or Illegal Argument passed for MQStringCollection"</span>;
+      } <span class="reserved">else</span> {
+            var recordIds = new MQStringCollection();
+            recordIds.setM_Xpath(<span class="literal">"RecordIds"</span>);
+            recordIds.append(mqscRecIds);
+            arrRequest.push(recordIds);
+      }
+
+      mqLogTime(<span class="literal">"MQExec.getRecordInfo: Transaction Start"</span>);
+      xmlDoc = <span class="reserved">this</span>.doTransaction(<span class="literal">"GetRecordInfo"</span>, arrRequest, <span class="reserved">this</span>.GETRECORDINFO_VERSION);
+      mqLogTime(<span class="literal">"MQExec.getRecordInfo: Transaction End"</span>);
+
+      mqLogTime(<span class="literal">"MQExec.getRecordInfo: Loading of RecordSet Start"</span>);
+      strXml = mqXmlToStr(mqGetNode(xmlDoc, <span class="literal">"/GetRecordInfoResponse/RecordSet"</span>));
+      mqrsResults.loadXml(strXml);
+      mqLogTime(<span class="literal">"MQExec.getRecordInfo: Loading of RecordSet End"</span>);
+
+      display(<span class="literal">"results"</span>, <span class="literal">"Response"</span>, mqXmlToStr(xmlDoc), <span class="literal">""</span>, <span class="literal">"mqDisplay"</span>);
+
+   };
+
+
+   <span class="comment">/**
+    * Finds the address at a given latitude/longitude position.
+    *
+    * <span class="attrib">@param</span> {MQLatLng}  mqllLatLng The latitude/longitude position to use for
+    * the reverse geocode.
+    * (Please Note:  This object will not be updated, it is simply used for the request.)
+    *
+    * <span class="attrib">@param</span> {MQLocationCollection}  mqlcLocations A LocationCollection in
+    * which to return the results of the reverse geocode.  It will contain
+    * only GeoAddress objects.
+    *
+    * <span class="attrib">@param</span> {String}  strMapCovName The name of the mapping coverage to be
+    * used for the reverse geocode.
+    *
+    * <span class="attrib">@param</span> {String}  strGeocodeCovName An optional parameter, specifies the
+    * geocode coverage to use for the reverse geocode. If specified, using
+    * this geocode coverage, a ZIP code lookup will be performed on the addresses
+    * found in the mapping data to verify and fill in the city/state information
+    * for the address. If not specified, only ZIP code and, if available, street
+    * information found in the mapping data will be returned.
+    *
+    * <span class="attrib">@type</span> void
+    *
+    */</span>
+
+   MQExec.<span class="reserved">prototype</span>.reverseGeocode = <span class="reserved">function</span>(mqllLatLng, mqlcLocations, strMapCovName, strGeocodeCovName) {
+
+      var xmlDoc;
+      var strXml;
+      var arrRequest = new Array();
+
+      <span class="reserved">if</span>( mqllLatLng == null || mqllLatLng.getClassName() !== <span class="literal">"MQLatLng"</span> ) {
+           throw <span class="literal">"Null or Illegal Argument passed for MQLatLng"</span>;
+      } <span class="reserved">else</span> {
+           arrRequest.push(mqllLatLng);
+      }
+      <span class="reserved">if</span>( mqlcLocations == null || mqlcLocations.getClassName() !== <span class="literal">"MQLocationCollection"</span> ) {
+           throw <span class="literal">"Null or Illegal Argument passed for MQLocationCollection"</span>;
+      }
+      var mapPool = strMapCovName || <span class="literal">""</span>;
+      arrRequest.push(new MQXmlNodeObject(<span class="literal">"MapPool"</span>, mapPool));
+
+      var geocodePool = strGeocodeCovName || <span class="literal">""</span>;
+      arrRequest.push(new MQXmlNodeObject(<span class="literal">"GeocodePool"</span>, geocodePool));
+
+      mqLogTime(<span class="literal">"MQExec.reverseGeocode: Transaction Start"</span>);
+      xmlDoc = <span class="reserved">this</span>.doTransaction(<span class="literal">"ReverseGeocode"</span>, arrRequest, <span class="reserved">this</span>.REVERSEGEOCODE_VERSION);
+      mqLogTime(<span class="literal">"MQExec.reverseGeocode: Transaction End"</span>);
+
+      mqLogTime(<span class="literal">"MQExec.reverseGeocode: Loading of Response Start"</span>);
+      strXml = mqXmlToStr(mqGetNode(xmlDoc, <span class="literal">"/ReverseGeocodeResponse/LocationCollection"</span>));
+      mqlcLocations.loadXml(strXml);
+      mqLogTime(<span class="literal">"MQExec.reverseGeocode: Loading of Response End"</span>);
+
+      display(<span class="literal">"results"</span>, <span class="literal">"Response"</span>, mqXmlToStr(xmlDoc), <span class="literal">""</span>, <span class="literal">"mqDisplay"</span>);
+
+   };
+
+
+   <span class="comment">/**
+    * Generates a request to the MapQuest server (as specified by the
+    * server name, path, and port number) to perform a search and
+    * return the results in a FeatureCollection object.
+    *
+    * <span class="attrib">@param</span>  {MQSearchCriteria} mqscCriteria  Spatial parameters for the search.
+    * (Please Note:  This object will not be updated, it is simply used for the request.)
+    *
+    * <span class="attrib">@param</span> {MQFeatureCollection}  mqfcSearchResults Search results.
+    *
+    * <span class="attrib">@param</span> {String}  strCoverageName  The name of the map data coverage if searching
+    * for features in the map data.
+    *
+    * <span class="attrib">@param</span> {MQDBLayerQueryCollection}  mqdlqcDbLayers  Database parameters for the search.
+    * (Please Note:  This object will not be updated, it is simply used for the request.)
+    *
+    * <span class="attrib">@param</span> {MQFeatureCollection}  mqfcFeatures  A FeatureCollection to also be searched
+    * based on the spatial criteria.
+    * (Please Note:  This object will not be updated, it is simply used for the request.)
+    *
+    * <span class="attrib">@param</span> {MQDTCollection}  mqdcDisplayTypes  A DTCollection to narrow the search. Only those
+    * features with display types corresponding to those in this collection will be returned.
+    * (Please Note:  This object will not be updated, it is simply used for the request.)
+    *
+    * <span class="attrib">@type</span> void
+    */</span>
+
+   MQExec.<span class="reserved">prototype</span>.search = <span class="reserved">function</span>(mqscCriteria, mqfcSearchResults, strCoverageName,
+                              mqdlqcDbLayers, mqfcFeatures, mqdcDisplayTypes)      {
+      var xmlDoc;
+      var strXml;
+      var arrRequest = new Array();
+      var strName = mqscCriteria ? mqscCriteria.getClassName(): null;
+
+      <span class="reserved">if</span>( strName == null || (strName !== <span class="literal">"MQSearchCriteria"</span> &amp;&amp;
+            strName !== <span class="literal">"MQRadiusSearchCriteria"</span> &amp;&amp; strName !== <span class="literal">"MQRectSearchCriteria"</span> &amp;&amp;
+            strName !== <span class="literal">"MQPolySearchCriteria"</span> &amp;&amp; strName !== <span class="literal">"MQCorridorSearchCriteria"</span> )) {
+           throw <span class="literal">"Null or Illegal Argument passed for Search Criteria"</span>;
+      } <span class="reserved">else</span> {
+             arrRequest.push(mqscCriteria);
+      }
+      <span class="reserved">if</span>(mqfcSearchResults == null || mqfcSearchResults.getClassName() !== <span class="literal">"MQFeatureCollection"</span>) {
+           throw <span class="literal">"Null or Illegal Argument passed for MQFeatureCollection"</span>;
+      }
+      <span class="reserved">if</span>( typeof strCoverageName !== <span class="literal">"string"</span> ) {
+           throw <span class="literal">"Illegal Argument passed for strCoverageName"</span>;
+      } <span class="reserved">else</span> {
+            arrRequest.push(new MQXmlNodeObject(<span class="literal">"CoverageName"</span>, strCoverageName));
+      }
+
+      <span class="reserved">if</span>(mqdlqcDbLayers != null &amp;&amp; mqdlqcDbLayers.getClassName() !== <span class="literal">"MQDBLayerQueryCollection"</span>) {
+           throw <span class="literal">"Illegal Argument passed for MQRouteOptions"</span>;
+      } <span class="reserved">else</span> <span class="reserved">if</span>(mqdlqcDbLayers == null) {
+            mqdlqcDbLayers = new MQDBLayerQueryCollection();
+      }
+      arrRequest.push(mqdlqcDbLayers);
+
+      <span class="reserved">if</span>(mqfcFeatures != null &amp;&amp; mqfcFeatures.getClassName() !== <span class="literal">"MQFeatureCollection"</span>) {
+      throw <span class="literal">"Illegal Argument passed for MQFeatureCollection"</span>;
+      } <span class="reserved">else</span> <span class="reserved">if</span>( mqfcFeatures == null ) {
+      mqfcFeatures = new MQFeatureCollection();
+      }
+      arrRequest.push(mqfcFeatures);
+
+      <span class="reserved">if</span>(mqdcDisplayTypes != null &amp;&amp; mqdcDisplayTypes.getClassName() !== <span class="literal">"MQDTCollection"</span>) {
+          throw <span class="literal">"Illegal Argument passed for MQDTCollection"</span>;
+     } <span class="reserved">else</span> <span class="reserved">if</span>(mqdcDisplayTypes == null ) {
+          mqdcDisplayTypes = new MQDTCollection();
+      }
+      arrRequest.push(mqdcDisplayTypes);
+
+      mqLogTime(<span class="literal">"MQExec.Search: Transaction Start"</span>);
+      xmlDoc = <span class="reserved">this</span>.doTransaction(<span class="literal">"Search"</span>, arrRequest, <span class="reserved">this</span>.SEARCH_VERSION);
+      mqLogTime(<span class="literal">"MQExec.Search: Transaction End"</span>);
+
+      mqLogTime(<span class="literal">"MQExec.Search: Loading of Search results Start"</span>);
+      strXml = mqXmlToStr(mqGetNode(xmlDoc, <span class="literal">"/SearchResponse/FeatureCollection"</span>));
+      mqfcSearchResults.loadXml(strXml);
+      mqLogTime(<span class="literal">"MQExec.Search: Loading of Search results End"</span>);
+
+      display(<span class="literal">"results"</span>, <span class="literal">"Response"</span>, mqXmlToStr(xmlDoc), <span class="literal">""</span>, <span class="literal">"mqDisplay"</span>);
+
+   };
+
+   <span class="comment">/**
+    * Sets the mqRectLL appropriately for tilemaps routing
+    *
+    * <span class="attrib">@param</span> {String} strSessionUID The unique Session ID.
+    *
+    * <span class="attrib">@param</span> {MQRectLL} mqRectLL The bounding box for the route in the session.
+    *
+    * <span class="attrib">@type</span> void
+    * <span class="attrib">@private</span>
+    */</span>
+
+   MQExec.<span class="reserved">prototype</span>.getRouteBoundingBoxFromSessionResponse = <span class="reserved">function</span>(sessionId, mqRectLL) {
+
+      var xmlDoc;
+      var strXml;
+      var arrRequest = new Array();
+
+      <span class="reserved">if</span>(mqRectLL == null) {
+         throw <span class="literal">"Null or Illegal Argument passed for MQRectLL"</span>;
+      }
+      arrRequest.push(new MQXmlNodeObject(<span class="literal">"SessionID"</span>,sessionId) );
+
+      xmlDoc = <span class="reserved">this</span>.doTransaction(<span class="literal">"GetRouteBoundingBoxFromSession"</span>, arrRequest);
+
+      mqLogTime(<span class="literal">"MQExec.doRoute: Loading of MQRectLL Start"</span>);
+      var nodes = xmlDoc.documentElement.childNodes;
+      var ul = new MQLatLng();
+      ul.loadXml(mqXmlToStr(nodes[0]));
+      var lr = new MQLatLng();
+      lr.loadXml(mqXmlToStr(nodes[1]));
+      mqRectLL.setUpperLeft(ul);
+      mqRectLL.setLowerRight(lr);
+      mqLogTime(<span class="literal">"MQExec.doRoute: Loading of MQRectLL End"</span>);
+   };
+
+   <span class="comment">/**
+    * Returns a value indicating whether or not this object has been
+    * initialized to a map server and port number.
+    *
+    * <span class="attrib">@return</span> &lt;code&gt;&lt;b&gt;true&lt;/b&gt;&lt;/code&gt; if the port number or the Server
+    *         name is not equal to their uninitialized values, &lt;code&gt;&lt;b&gt;
+    *         false&lt;/b&gt;&lt;/code&gt; otherwise.
+    *
+    * <span class="attrib">@type</span> boolean
+    *
+    * <span class="attrib">@private</span>
+    */</span>
+
+   MQExec.<span class="reserved">prototype</span>.isAlive = <span class="reserved">function</span>() {
+
+      <span class="reserved">if</span>( <span class="reserved">this</span>.getServerPort() == -1 || <span class="reserved">this</span>.getServerName() == <span class="literal">""</span> )
+         <span class="reserved">return</span> false;
+      <span class="reserved">return</span> true;
+
+   };
+
+
+   <span class="comment">/**
+    * Returns the string which specifies the coverage information requested
+    * directly via an http request.
+    *
+    * <span class="attrib">@param</span> {int}  lType Type of info to return,
+    * 0=CoverageInfo, 1=MapDataSelectorInfo.
+    *
+    * <span class="attrib">@return</span> The string which specifies the server information.
+    *
+    * <span class="attrib">@type</span> Document
+    */</span>
+
+   MQExec.<span class="reserved">prototype</span>.getServerInfo = <span class="reserved">function</span>( lType ) {
+
+      <span class="reserved">if</span> (!<span class="reserved">this</span>.isAlive())
+         <span class="reserved">return</span> null;
+
+      var strReqXml;
+      var xmlDoc;
+      var strXml;
+      var type = lType || 0;
+      var arrRequest = new Array();
+      <span class="reserved">if</span>( typeof type !== <span class="literal">"number"</span> ) {
+         throw <span class="literal">"Illegal Argument passed for lType"</span>;
+      } <span class="reserved">else</span> {
+         arrRequest.push(new MQXmlNodeObject(<span class="literal">"Type"</span>, type));
+      }
+
+      mqLogTime(<span class="literal">"MQExec.GetServerInfo: Transaction Start"</span>);
+      xmlDoc = <span class="reserved">this</span>.doTransaction(<span class="literal">"GetServerInfo"</span>, arrRequest);
+      mqLogTime(<span class="literal">"MQExec.GetServerInfo: Transaction End"</span>);
+      display(<span class="literal">"results"</span>, <span class="literal">"Response"</span>, mqXmlToStr(xmlDoc), <span class="literal">""</span>, <span class="literal">"mqDisplay"</span>);
+      <span class="reserved">return</span> xmlDoc;
+
+   };
+
+
+</pre>
+	<hr>
+
+
+
+<!-- ========== START OF NAVBAR ========== -->
+<a name="navbar_top"><!-- --></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan=2 bgcolor="#EEEEFF" class="NavBarCell1">
+<a name="navbar_top_firstrow"><!-- --></a>
+<table border="0" cellpadding="0" cellspacing="3">
+  <tr align="center" valign="top">
+  
+  
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+  <td bgcolor="#FFFFFF" class="NavBarCell1Rev">	&nbsp;<font class="NavBarFont1Rev"><b>File</b></font>&nbsp;</td>
+  
+
+  <td bgcolor="#FFFFFF" class="NavBarCell1"> <font class="NavBarFont1">Class</font>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="index-all.html"--><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+  </tr>
+</table>
+</td>
+<td bgcolor="#EEEEFF" align="right" valign="top"><em>
+<b>MapQuest Advantage JavaScript API Reference Documentation</b></em>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</font></td>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+  <a href="index.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="overview-summary.html" target="_top"><b>NO FRAMES</b></a>
+&nbsp;&nbsp;
+<script>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+<noscript>
+<a href="allclasses-noframe.html" target=""><b>All Classes</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<!-- =========== END OF NAVBAR =========== -->
+
+<hr>
+<font size="-1">
+
+</font>
+<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Fri Oct 19 08:54:32 2007</div>
+</body>
+</html>

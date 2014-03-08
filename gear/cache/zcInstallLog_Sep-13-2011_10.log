@@ -1,0 +1,180 @@
+---------------
+Sep 13 2011 22:51 -- inspect
+System Inspection Results: 
+------------------------------
+NA: Webserver => Apache/2.0.63 (Unix) mod_ssl/2.0.63 OpenSSL/0.9.8e-fips-rhel5 mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635
+NA: HTTP Host => www.sinkspots.org
+NA: Path_Translated => /home/weaver/public_html/sinkspots.org/gear/zc_install/index.php(SCRIPT_FILENAME)
+NA: Real Path => /home/weaver/public_html/sinkspots.org/gear
+NA: Server Free Disk Space => 20.01 GB
+NA: PHP O/S => Linux
+NA: PHP API Mode => cgi
+NA: PHP Max Execution Time per page => 30
+OK: Register Globals => OFF
+OK: MySQL Support => ON
+OK: PHP Version => 5.2.9
+OK: PHP Safe Mode => OFF
+OK: PHP Sessions Support => ON
+OK: PHP Session.AutoStart => OFF
+OK: PHP session.use_trans_sid => OFF
+OK: Suggested SQL Cache Folder => /home/weaver/public_html/sinkspots.org/gear/cache
+OK: PHP magic_quotes_runtime setting => OFF
+OK: PHP magic_quotes_sybase setting => OFF
+WARN: PHP GD Support => OFF
+OK: PHP ZLIB Compression Support => ON
+OK: PHP OpenSSL Support => ON
+OK: PHP cURL Support => ON
+OK: CURL NON-SSL Capability => Okay
+OK: CURL SSL Capability => Okay
+OK: PHP Upload Support => ON  upload_max_filesize=2M;  post_max_size=8M
+OK: PHP Upload TMP dir => 
+NA: PHP include_path => .:/usr/lib/php:/usr/local/lib/php
+NA: PHP SMTP destination => localhost
+NA: PHP sendmail path => /usr/sbin/sendmail -t -i
+NA: PHP sendmail 'from' => 
+OK: PHP open_basedir restrictions => 
+WARN: PHP Output Buffering (gzip) => OFF
+OK: PHP XML Support => ON
+OK: PHP Session.Save_Path => /home/weaver/public_html/sinkspots.org/gear/cache-->Writeable
+OK: includes/configure.php =>  Writeable
+OK: admin/includes/configure.php =>  Writeable
+OK: cache => OK 777 read/write/execute
+OK: images => OK 777 read/write/execute (INCLUDE SUBDIRECTORIES TOO)
+OK: includes/languages/english/html_includes => OK 777 read/write (INCLUDE SUBDIRECTORIES TOO)
+OK: media => OK 777 read/write/execute
+OK: pub => OK 777 read/write/execute
+OK: admin/backups => OK 777 read/write
+OK: admin/images/graphs => OK 777 read/write/execute
+PHP Extensions compiled: xmlwriter, libxml, dom, xmlreader, xml, tokenizer, session, pcre, SimpleXML, SPL, sockets, SQLite, standard, Reflection, posix, mysql, json, imap, iconv, hash, ftp, filter, date, curl, ctype, calendar, bcmath, zlib, openssl, cgi, ionCube Loader
+------------------------------
+
+
+---------------
+Sep 13 2011 22:52 -- inspect
+System Inspection Results: 
+------------------------------
+NA: Webserver => Apache/2.0.63 (Unix) mod_ssl/2.0.63 OpenSSL/0.9.8e-fips-rhel5 mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635
+NA: HTTP Host => www.sinkspots.org
+NA: Path_Translated => /home/weaver/public_html/sinkspots.org/gear/zc_install/index.php(SCRIPT_FILENAME)
+NA: Real Path => /home/weaver/public_html/sinkspots.org/gear
+NA: Server Free Disk Space => 20.01 GB
+NA: PHP O/S => Linux
+NA: PHP API Mode => cgi
+NA: PHP Max Execution Time per page => 30
+OK: Register Globals => OFF
+OK: MySQL Support => ON
+OK: PHP Version => 5.2.9
+OK: PHP Safe Mode => OFF
+OK: PHP Sessions Support => ON
+OK: PHP Session.AutoStart => OFF
+OK: PHP session.use_trans_sid => OFF
+OK: Suggested SQL Cache Folder => /home/weaver/public_html/sinkspots.org/gear/cache
+OK: PHP magic_quotes_runtime setting => OFF
+OK: PHP magic_quotes_sybase setting => OFF
+WARN: PHP GD Support => OFF
+OK: PHP ZLIB Compression Support => ON
+OK: PHP OpenSSL Support => ON
+OK: PHP cURL Support => ON
+OK: CURL NON-SSL Capability => Okay
+OK: CURL SSL Capability => Okay
+OK: PHP Upload Support => ON  upload_max_filesize=2M;  post_max_size=8M
+OK: PHP Upload TMP dir => 
+NA: PHP include_path => .:/usr/lib/php:/usr/local/lib/php
+NA: PHP SMTP destination => localhost
+NA: PHP sendmail path => /usr/sbin/sendmail -t -i
+NA: PHP sendmail 'from' => 
+OK: PHP open_basedir restrictions => 
+WARN: PHP Output Buffering (gzip) => OFF
+OK: PHP XML Support => ON
+OK: PHP Session.Save_Path => /home/weaver/public_html/sinkspots.org/gear/cache-->Writeable
+OK: includes/configure.php =>  Writeable
+OK: admin/includes/configure.php =>  Writeable
+OK: cache => OK 777 read/write/execute
+OK: images => OK 777 read/write/execute (INCLUDE SUBDIRECTORIES TOO)
+OK: includes/languages/english/html_includes => OK 777 read/write (INCLUDE SUBDIRECTORIES TOO)
+OK: media => OK 777 read/write/execute
+OK: pub => OK 777 read/write/execute
+OK: admin/backups => OK 777 read/write
+OK: admin/images/graphs => OK 777 read/write/execute
+PHP Extensions compiled: xmlwriter, libxml, dom, xmlreader, xml, tokenizer, session, pcre, SimpleXML, SPL, sockets, SQLite, standard, Reflection, posix, mysql, json, imap, iconv, hash, ftp, filter, date, curl, ctype, calendar, bcmath, zlib, openssl, cgi, ionCube Loader
+------------------------------
+
+
+---------------
+Sep 13 2011 22:52 -- inspect
+System Inspection Results: 
+------------------------------
+NA: Webserver => Apache/2.0.63 (Unix) mod_ssl/2.0.63 OpenSSL/0.9.8e-fips-rhel5 mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635
+NA: HTTP Host => www.sinkspots.org
+NA: Path_Translated => /home/weaver/public_html/sinkspots.org/gear/zc_install/index.php(SCRIPT_FILENAME)
+NA: Real Path => /home/weaver/public_html/sinkspots.org/gear
+NA: Server Free Disk Space => 20.01 GB
+NA: PHP O/S => Linux
+NA: PHP API Mode => cgi
+NA: PHP Max Execution Time per page => 30
+OK: Register Globals => OFF
+OK: MySQL Support => ON
+OK: PHP Version => 5.2.9
+OK: PHP Safe Mode => OFF
+OK: PHP Sessions Support => ON
+OK: PHP Session.AutoStart => OFF
+OK: PHP session.use_trans_sid => OFF
+OK: Suggested SQL Cache Folder => /home/weaver/public_html/sinkspots.org/gear/cache
+OK: PHP magic_quotes_runtime setting => OFF
+OK: PHP magic_quotes_sybase setting => OFF
+WARN: PHP GD Support => OFF
+OK: PHP ZLIB Compression Support => ON
+OK: PHP OpenSSL Support => ON
+OK: PHP cURL Support => ON
+OK: CURL NON-SSL Capability => Okay
+OK: CURL SSL Capability => Okay
+OK: PHP Upload Support => ON  upload_max_filesize=2M;  post_max_size=8M
+OK: PHP Upload TMP dir => 
+NA: PHP include_path => .:/usr/lib/php:/usr/local/lib/php
+NA: PHP SMTP destination => localhost
+NA: PHP sendmail path => /usr/sbin/sendmail -t -i
+NA: PHP sendmail 'from' => 
+OK: PHP open_basedir restrictions => 
+WARN: PHP Output Buffering (gzip) => OFF
+OK: PHP XML Support => ON
+OK: PHP Session.Save_Path => /home/weaver/public_html/sinkspots.org/gear/cache-->Writeable
+OK: includes/configure.php =>  Writeable
+OK: admin/includes/configure.php =>  Writeable
+OK: cache => OK 777 read/write/execute
+OK: images => OK 777 read/write/execute (INCLUDE SUBDIRECTORIES TOO)
+OK: includes/languages/english/html_includes => OK 777 read/write (INCLUDE SUBDIRECTORIES TOO)
+OK: media => OK 777 read/write/execute
+OK: pub => OK 777 read/write/execute
+OK: admin/backups => OK 777 read/write
+OK: admin/images/graphs => OK 777 read/write/execute
+PHP Extensions compiled: xmlwriter, libxml, dom, xmlreader, xml, tokenizer, session, pcre, SimpleXML, SPL, sockets, SQLite, standard, Reflection, posix, mysql, json, imap, iconv, hash, ftp, filter, date, curl, ctype, calendar, bcmath, zlib, openssl, cgi, ionCube Loader
+------------------------------
+
+
+---------------
+Sep 13 2011 22:55 -- database_setup1
+Installer - Page: database_setup -- collected information: Array
+(
+    [language] => english
+    [DIR_FS_SQL_CACHE] => /home/weaver/public_html/sinkspots.org/gear/cache
+    [DB_TYPE] => mysql
+    [DB_PREFIX] => zen_
+    [DB_CHARSET] => latin1
+    [DB_SERVER] => localhost
+    [DB_SERVER_USERNAME] => weaver_sinkspots
+    [DB_SERVER_PASSWORD] => YzJ4cGJtc3lVMmx1YXc9PQ==
+    [DB_DATABASE] => weaver_sinkspots
+    [STORE_SESSIONS] => db
+    [USE_PCONNECT] => 
+    [SQL_CACHE_METHOD] => none
+)
+
+
+---------------
+Sep 13 2011 22:57 -- store_setup
+FATAL: Store owner is empty
+
+---------------
+Sep 13 2011 22:57 -- store_setup
+FATAL: Store address is empty
+

@@ -1,0 +1,7 @@
+/*  Blockquotes are used as containers for things that may need to scroll.  */
+blockquote {
+    padding: 0;
+    margin: 5ex;
+	 margin-top: -1ex;
+    overflow: auto;
+    }

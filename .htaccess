@@ -1,0 +1,6 @@
+##Options +FollowSymlinks
+##RewriteEngine on
+##rewritecond %{http_host} ^www.sinkspots.com [OR]
+##rewritecond %{http_host} ^sinkspots.com [OR]
+##rewritecond %{http_host} ^weaver.lunarcharc.com
+##rewriterule ^(.*)$ http://www.SinkSpots.org/$1 [r=301,nc] 

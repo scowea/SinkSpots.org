@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "http://localhost/JSAPIProxyPage/", "http://localhost/JSAPIProxyPage", "{8BA8B6F4-8B0F-4435-A4BD-16C6C4739A9C}"
+   ProjectSection(WebsiteProperties) = preProject
+      Debug.AspNetCompiler.VirtualPath = "/JSAPIProxyPage"
+      Debug.AspNetCompiler.PhysicalPath = "..\JSAPIProxyPage\"
+      Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\JSAPIProxyPage\"
+      Debug.AspNetCompiler.Updateable = "true"
+      Debug.AspNetCompiler.ForceOverwrite = "true"
+      Debug.AspNetCompiler.FixedNames = "false"
+      Debug.AspNetCompiler.Debug = "True"
+      Release.AspNetCompiler.VirtualPath = "/JSAPIProxyPage"
+      Release.AspNetCompiler.PhysicalPath = "..\JSAPIProxyPage\"
+      Release.AspNetCompiler.TargetPath = "PrecompiledWeb\JSAPIProxyPage\"
+      Release.AspNetCompiler.Updateable = "true"
+      Release.AspNetCompiler.ForceOverwrite = "true"
+      Release.AspNetCompiler.FixedNames = "false"
+      Release.AspNetCompiler.Debug = "False"
+      SlnRelativePath = "..\JSAPIProxyPage\"
+   EndProjectSection
+EndProject
+Global
+   GlobalSection(SolutionConfigurationPlatforms) = preSolution
+      Debug|.NET = Debug|.NET
+   EndGlobalSection
+   GlobalSection(ProjectConfigurationPlatforms) = postSolution
+      {8BA8B6F4-8B0F-4435-A4BD-16C6C4739A9C}.Debug|.NET.ActiveCfg = Debug|.NET
+      {8BA8B6F4-8B0F-4435-A4BD-16C6C4739A9C}.Debug|.NET.Build.0 = Debug|.NET
+   EndGlobalSection
+   GlobalSection(SolutionProperties) = preSolution
+      HideSolutionNode = FALSE
+   EndGlobalSection
+EndGlobal

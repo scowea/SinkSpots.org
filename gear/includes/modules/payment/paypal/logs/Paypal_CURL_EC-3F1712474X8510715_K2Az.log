@@ -1,0 +1,70 @@
+2011-10-18 11:36:10
+-------------------
+(live transaction) --> https://api-3t.paypal.com/nvp
+Request Headers: 
+Array
+(
+    [0] => Content-Type: text/namevalue
+    [1] => X-VPS-Timeout: 45
+    [2] => X-VPS-VIT-Client-Type: PHP/cURL
+    [3] => X-VPS-VIT-Integration-Product: PHP::Zen Cart(tm) - PayPal/NVP
+    [4] => X-VPS-VIT-Integration-Version: 1.3.9f
+)
+
+
+Request Parameters: {SetExpressCheckout} 
+Array
+(
+    [AMT] => 107.00
+    [ITEMAMT] => 107.00
+    [L_NUMBER0] => 
+    [L_NAME0] => Size Small - GripStyle - Thin Stripe
+    [L_AMT0] => 100.00
+    [L_QTY0] => 1
+    [L_NUMBER1] => 
+    [L_NAME1] => My Other Boat Sinks
+    [L_AMT1] => 1.00
+    [L_QTY1] => 1
+    [L_NUMBER2] => 
+    [L_NAME2] => Sinking Guy
+    [L_AMT2] => 1.00
+    [L_QTY2] => 3
+    [L_NUMBER3] => 
+    [L_NAME3] => Id Rather Be Under Water
+    [L_AMT3] => 1.00
+    [L_QTY3] => 2
+    [L_NUMBER4] => 
+    [L_NAME4] => Sink Deep Thoughts
+    [L_AMT4] => 1.00
+    [L_QTY4] => 1
+    [LOCALECODE] => US
+    [PAYMENTACTION] => Sale
+    [ALLOWNOTE] => 1
+    [LANDINGPAGE] => Billing
+    [RETURNURL] => http://www.sinkspots.org/gear/ipn_main_handler.php?type=ec&zenid=2e7ee346108ec604a5dfc1250835b2e9
+    [CANCELURL] => http://www.sinkspots.org/gear/index.php?main_page=login&ec_cancel=1&zenid=2e7ee346108ec604a5dfc1250835b2e9
+    [PAGESTYLE] => Primary
+    [METHOD] => SetExpressCheckout
+    [CURRENCYCODE] => USD
+    [USER] => sinkspots_api1.yahoo.com
+    [PWD] => ****************
+    [VERSION] => 60.0
+    [SIGNATURE] => ****************************************************SzWr
+)
+
+
+Response: 
+Array
+(
+    [TOKEN] => EC-3F1712474X8510715
+    [TIMESTAMP] => 2011-10-18T23:36:10Z
+    [CORRELATIONID] => 2646163bb5aee
+    [ACK] => Success
+    [VERSION] => 60.0
+    [BUILD] => 2183220
+    [CURL_ERRORS] => 
+)
+
+
+SetExpressCheckout, Elapsed: 669ms -- Success
+

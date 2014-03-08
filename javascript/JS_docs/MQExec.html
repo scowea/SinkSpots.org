@@ -1,0 +1,1525 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN""http://www.w3.org/TR/REC-html40/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+MQExec
+</TITLE>
+<LINK REL ="stylesheet" TYPE="text/css" HREF="stylesheet.css" TITLE="Style">
+</HEAD>
+<SCRIPT>
+function asd()
+{
+parent.document.title="MQExec";
+}
+</SCRIPT>
+<BODY BGCOLOR="white" onload="asd();">
+
+<!-- ========== START OF NAVBAR ========== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
+<TR>
+<TD COLSPAN=3 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">  <A HREF="overview-summary-mqexec.js.html"><FONT CLASS="NavBarFont1"><B>File</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev">&nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <!--TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"-->    <!--A HREF="deprecated-list.html"--><!--FONT CLASS="NavBarFont1">Deprecated</FONT--><!--/A--><!--&nbsp;</TD-->
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="index-all.html"--><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<B>MapQuest Advantage JavaScript API Reference Documentation</B>
+</EM>
+</TD
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="MQErrors.html"><B>PREV CLASS</B></A><!-- 
+   NEXT CLASS 
+-->
+&nbsp;<A HREF="MQFeature.html"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="index.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="MQExec.html" TARGET="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;
+<SCRIPT>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>
+</NOSCRIPT>
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<!-- =========== END OF NAVBAR =========== -->
+<HR>
+
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>Class MQExec</H2>
+<PRE>Object
+   |
+   +--<b>MQExec</b>
+</PRE>
+
+
+<HR>
+<DL>
+   <!-- Class definition -->
+   <DT>class 
+   <B>MQExec</B>
+   
+
+</DL>
+   
+   <P>
+   <BR/>Provides communication layer for requests to a server. Most, but
+ not all, of the functions generate actual requests to the MapQuest
+ Server. Within the context of this object, a Session object is used
+ to maintain information concerning the current client's requests.
+
+ <BR/><I>Defined in <a href='overview-summary-mqexec.js.html'>mqexec.js</a></I><BR/><BR/><B>See:</B><UL>- <a href="MQDBLayerQueryCollection.html#">MQDBLayerQueryCollection</a><BR/>- <a href="MQDTCollection.html#">MQDTCollection</a><BR/>- <a href="MQFeatureCollection.html#">MQFeatureCollection</a><BR/>- <a href="MQLocation.html#">MQLocation</a><BR/>- <a href="MQLocationCollection.html#">MQLocationCollection</a><BR/>- <a href="MQMapState.html#">MQMapState</a><BR/>- <a href="MQLatLng.html#">MQLatLng</a><BR/>- <a href="MQPoint.html#">MQPoint</a><BR/>- <a href="MQSession.html#">MQSession</a><BR/>- <a href="MQRouteOptions.html#">MQRouteOptions</a><BR/>- <a href="MQRouteResults.html#">MQRouteResults</a><BR/>- <a href="MQGeocodeOptionsCollection.html#">MQGeocodeOptionsCollection</a><BR/>- <a href="MQStringCollection.html#">MQStringCollection</a><BR/>- <a href="MQRecordSet.html#">MQRecordSet</a><BR/>- <a href="MQLatLngCollection.html#">MQLatLngCollection</a><BR/>- <a href="MQPointCollection.html#">MQPointCollection</a><BR/>- <a href="MQSearchCriteria.html#">MQSearchCriteria</a><BR/>- <a href="MQMapCommand.html#">MQMapCommand</a><BR/>- <a href="MQQualityType.html#">MQQualityType</a><BR/>- <a href="MQMatchType.html#">MQMatchType</a></UL>
+   </P>
+   
+   <HR>
+
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<!-- ======== END NESTED CLASS SUMMARY ======== -->
+
+
+<!-- =========== FIELD SUMMARY =========== -->
+
+   <A NAME="field_summary"><!-- --></A>
+      <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+         <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+            <TD COLSPAN=2><FONT SIZE="+2">
+               <B>Field Summary</B></FONT></TD>
+         </TR>
+
+   <!-- This is one instance field summary -->
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&nbsp;Object</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#GEOCODE_VERSION">GEOCODE_VERSION</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&nbsp;Object</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#GETRECORDINFO_VERSION">GETRECORDINFO_VERSION</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&nbsp;Object</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#GETSESSION_VERSION">GETSESSION_VERSION</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&lt;private&gt;&nbsp;&nbsp;Object</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#m_strXInfo">m_strXInfo</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&nbsp;Object</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#REVERSEGEOCODE_VERSION">REVERSEGEOCODE_VERSION</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&nbsp;Object</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#ROUTE_VERSION">ROUTE_VERSION</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&nbsp;Object</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#ROUTEMATRIX_VERSION">ROUTEMATRIX_VERSION</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&nbsp;Object</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#SEARCH_VERSION">SEARCH_VERSION</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+   </TR>
+   
+
+   </TABLE>
+   &nbsp;
+   
+
+   
+
+<!-- =========== END FIELD SUMMARY =========== -->
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=2><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD>
+      <CODE>
+	 <B>
+	    <A HREF="MQExec.html#MQExec()">MQExec</A> 
+	 </B>
+	 ( &lt;String/MQExec&gt; strServerNameORmqeObj, &lt;String&gt; strPathToServer, &lt;int&gt; nServerPort, &lt;String&gt; strProxyServerName, strPathToProxyServerPage, &lt;int&gt; nProxyServerPort )
+      </CODE>
+      <BR>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Constructs new MQExec Object
+      </TD>
+</TR>
+</TABLE>
+
+<!-- ======== END CONSTRUCTOR SUMMARY ======== -->
+
+&nbsp;
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=2><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TD>
+</TR>
+
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#batchGeocode">batchGeocode</A></B>(&lt;<a href="MQLocationCollection.html">MQLocationCollection</a>&gt; mqlcLocations, &lt;<a href="MQLocationCollectionCollection.html">MQLocationCollectionCollection</a>&gt; mqlccLocations, &lt;MQAutoGeocodeCovSwitch/MQGeocodeOptionsCollection&gt; theOptions)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Method to batch geocode a collection of locations.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;String</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#createSessionEx">createSessionEx</A></B>(&lt;<a href="MQSession.html">MQSession</a>&gt; mqsSession)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Generates a request to the MapQuest server (as specified by the
+ server name, path, and port number) to create a user Session.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#doRoute">doRoute</A></B>(&lt;<a href="MQLocationCollection.html">MQLocationCollection</a>&gt; mqlcLocations, &lt;<a href="MQRouteOptions.html">MQRouteOptions</a>&gt; mqroOptions, &lt;<a href="MQRouteResults.html">MQRouteResults</a>&gt; mqrrResults, &lt;String&gt; strSessionUID, &lt;MQRectLL&gt; mqRectLL)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Calculates a route using a collection of locations as origin and
+ destination.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#doRouteMatrix">doRouteMatrix</A></B>(&lt;<a href="MQLocationCollection.html">MQLocationCollection</a>&gt; mqlcLocations, &lt;boolean&gt; bAllToAll, &lt;<a href="MQRouteOptions.html">MQRouteOptions</a>&gt; mqroOptions, &lt;<a href="MQRouteMatrixResults.html">MQRouteMatrixResults</a>&gt; mqrmrResults)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Calculates a route matrix.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;&lt;private&gt; &nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#doTransaction">doTransaction</A></B>(&lt;String&gt; strTransaction, &lt;<a href="Array.html">Array</a>&gt; arrRequest, strVersion )
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Performs the given transaction by making AJAX call to the Proxy Server page.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#geocode">geocode</A></B>(&lt;<a href="MQAddress.html">MQAddress</a>&gt; mqaAddress, &lt;<a href="MQLocationCollection.html">MQLocationCollection</a>&gt; mqlcLocations, &lt;MQAutoGeocodeCovSwitch/MQGeocodeOptionsCollection&gt; theOptions)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Method to geocode an address or an intersection.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;String</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#getProxyServerName">getProxyServerName</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Returns the name or IP of the proxy server to connect to.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#getRecordInfo">getRecordInfo</A></B>(&lt;<a href="MQStringCollection.html">MQStringCollection</a>&gt; mqscFieldNames, &lt;<a href="MQDBLayerQuery.html">MQDBLayerQuery</a>&gt; mqdlqQuery, &lt;<a href="MQRecordSet.html">MQRecordSet</a>&gt; mqrsResults, &lt;<a href="MQStringCollection.html">MQStringCollection</a>&gt; mqscRecIds)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Generates a request to the MapQuest server (as specified by the server
+ name, path, and port number) to perform a DB Search based on either the
+ recordIds received or the extraCriteria info of the dblayerquery.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;&lt;private&gt; &nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#getRequestXml">getRequestXml</A></B>(&lt;String&gt; strTransaction, &lt;<a href="Array.html">Array</a>&gt; arrRequest, &lt;String&gt; strVersion)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Prepares request XML data to be sent to the server for a given transaction
+ and set of request objects.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;&lt;private&gt; &nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#getRouteBoundingBoxFromSessionResponse">getRouteBoundingBoxFromSessionResponse</A></B>(sessionId, &lt;MQRectLL&gt; mqRectLL)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Sets the mqRectLL appropriately for tilemaps routing
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Document</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#getServerInfo">getServerInfo</A></B>( &lt;int&gt; lType )
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Returns the string which specifies the coverage information requested
+ directly via an http request.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;String</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#getServerName">getServerName</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Returns the name of the server which will be used to satisfy this
+ request.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;String</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#getServerPath">getServerPath</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Returns the path to the server which will be used to satisfy this
+ request.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;int</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#getServerPort">getServerPort</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Returns the port number of the server which will be used to satisfy
+ this request.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#getSession">getSession</A></B>(strSessionID, mqObj)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;&lt;private&gt; &nbsp;boolean</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#isAlive">isAlive</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Returns a value indicating whether or not this object has been
+ initialized to a map server and port number.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#reverseGeocode">reverseGeocode</A></B>(&lt;<a href="MQLatLng.html">MQLatLng</a>&gt; mqllLatLng, &lt;<a href="MQLocationCollection.html">MQLocationCollection</a>&gt; mqlcLocations, &lt;String&gt; strMapCovName, &lt;String&gt; strGeocodeCovName)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Finds the address at a given latitude/longitude position.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#search">search</A></B>(&lt;<a href="MQSearchCriteria.html">MQSearchCriteria</a>&gt; mqscCriteria, &lt;<a href="MQFeatureCollection.html">MQFeatureCollection</a>&gt; mqfcSearchResults, &lt;String&gt; strCoverageName, &lt;<a href="MQDBLayerQueryCollection.html">MQDBLayerQueryCollection</a>&gt; mqdlqcDbLayers, &lt;<a href="MQFeatureCollection.html">MQFeatureCollection</a>&gt; mqfcFeatures, &lt;<a href="MQDTCollection.html">MQDTCollection</a>&gt; mqdcDisplayTypes)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Generates a request to the MapQuest server (as specified by the
+ server name, path, and port number) to perform a search and
+ return the results in a FeatureCollection object.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#setProxyServerName">setProxyServerName</A></B>(&lt;String&gt; strProxyServerName)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Sets the name or IP of the proxy server to connect to.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#setServerName">setServerName</A></B>(&lt;String&gt; strServerName)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Sets the name of the server which is to be used to satisfy this request.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#setServerPath">setServerPath</A></B>(&lt;String&gt; strServerPath)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Sets the path to the server which is to be used to satisfy this request.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#setServerPort">setServerPort</A></B>(&lt;int&gt; nServerPort)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Sets the port number to the server which is to be used to satisfy this
+ request.
+      </TD>
+   </TR>
+
+
+</TABLE>
+
+
+
+<P>
+<!-- ========== END METHOD SUMMARY =========== -->
+
+
+<!-- ============ FIELD DETAIL START =========== -->
+
+   <A NAME="field_detail"><!-- --></A>
+   <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+      <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+         <TD COLSPAN=1><FONT SIZE="+2"><B>Field Detail</B></FONT></TD>
+      </TR>
+   </TABLE>
+
+   
+   <A NAME="GEOCODE_VERSION"><!-- --></A>
+   <H3>GEOCODE_VERSION</H3>
+   <PRE>Object&nbsp;<B>GEOCODE_VERSION</B></PRE>
+   <UL>
+   
+   
+   </UL>
+   <HR>
+   
+   <A NAME="GETRECORDINFO_VERSION"><!-- --></A>
+   <H3>GETRECORDINFO_VERSION</H3>
+   <PRE>Object&nbsp;<B>GETRECORDINFO_VERSION</B></PRE>
+   <UL>
+   
+   
+   </UL>
+   <HR>
+   
+   <A NAME="GETSESSION_VERSION"><!-- --></A>
+   <H3>GETSESSION_VERSION</H3>
+   <PRE>Object&nbsp;<B>GETSESSION_VERSION</B></PRE>
+   <UL>
+   
+   
+   </UL>
+   <HR>
+   
+   <A NAME="m_strXInfo"><!-- --></A>
+   <H3>m_strXInfo</H3>
+   <PRE>&lt;private&gt;&nbsp;Object&nbsp;<B>m_strXInfo</B></PRE>
+   <UL>
+   
+   
+   </UL>
+   <HR>
+   
+   <A NAME="REVERSEGEOCODE_VERSION"><!-- --></A>
+   <H3>REVERSEGEOCODE_VERSION</H3>
+   <PRE>Object&nbsp;<B>REVERSEGEOCODE_VERSION</B></PRE>
+   <UL>
+   
+   
+   </UL>
+   <HR>
+   
+   <A NAME="ROUTE_VERSION"><!-- --></A>
+   <H3>ROUTE_VERSION</H3>
+   <PRE>Object&nbsp;<B>ROUTE_VERSION</B></PRE>
+   <UL>
+   
+   
+   </UL>
+   <HR>
+   
+   <A NAME="ROUTEMATRIX_VERSION"><!-- --></A>
+   <H3>ROUTEMATRIX_VERSION</H3>
+   <PRE>Object&nbsp;<B>ROUTEMATRIX_VERSION</B></PRE>
+   <UL>
+   
+   
+   </UL>
+   <HR>
+   
+   <A NAME="SEARCH_VERSION"><!-- --></A>
+   <H3>SEARCH_VERSION</H3>
+   <PRE>Object&nbsp;<B>SEARCH_VERSION</B></PRE>
+   <UL>
+   
+   
+   </UL>
+   <HR>
+   
+
+
+<!-- ============ FIELD DETAIL END =========== -->
+
+    <!-- ========= CONSTRUCTOR DETAIL START ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+   <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+      <TD COLSPAN=1>
+      <FONT SIZE="+2"><B>Constructor Detail</B></FONT>
+      </TD>
+   </TR>
+</TABLE>
+
+<A NAME="MQExec()"><!-- --></A><H3>
+MQExec</H3>
+<PRE><B>MQExec</B>( &lt;String/MQExec&gt; strServerNameORmqeObj, &lt;String&gt; strPathToServer, &lt;int&gt; nServerPort, &lt;String&gt; strProxyServerName, strPathToProxyServerPage, &lt;int&gt; nProxyServerPort )</PRE>
+
+
+<UL>
+   Constructs new MQExec Object
+</UL>
+
+
+
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>strServerNameORmqeObj</CODE> -  MapQuest Server name (or) MQExec  object to copy the server information.  
+     </UL>
+   
+     <UL><CODE>strPathToServer</CODE> -  Path to the Server  
+     </UL>
+   
+     <UL><CODE>nServerPort</CODE> -  HTTP Port of the Server  
+     </UL>
+   
+     <UL><CODE>strProxyServerName</CODE> -  Name of the server hosting the Proxy page  
+     </UL>
+   
+     <UL><CODE>nProxyServerPort</CODE> -  Port of the Server hosting the Proxy page      strServerName, strPathToServer, and nServerPort are required properties     that need to be set before the first request. If these properties are not     specified, the defaults used for initialization are:      MapServer = localhost     PathToServer = mq     HTTPPort = 80      Please Note: These defaults are not likely to match your configuration.      If MQExec object is provided as the first parameter, remaining parameters     will be ignored and server information will be copied from the provided object.    
+     </UL>
+   
+     <UL><CODE>String</CODE> - } strPathToProxyServerPage Path to the Proxy Server page  
+     </UL>
+   
+   
+   </UL>
+
+
+<!-- Constructor return value(s) -->
+
+<!-- End constructor return value(s) -->
+
+<!-- ADDITIONAL ATTRIBUTES -->
+
+<UL>   
+<B>See:</B><UL>- <a href="MQDBLayerQueryCollection.html#">MQDBLayerQueryCollection</a><BR/>- <a href="MQDTCollection.html#">MQDTCollection</a><BR/>- <a href="MQFeatureCollection.html#">MQFeatureCollection</a><BR/>- <a href="MQLocation.html#">MQLocation</a><BR/>- <a href="MQLocationCollection.html#">MQLocationCollection</a><BR/>- <a href="MQMapState.html#">MQMapState</a><BR/>- <a href="MQLatLng.html#">MQLatLng</a><BR/>- <a href="MQPoint.html#">MQPoint</a><BR/>- <a href="MQSession.html#">MQSession</a><BR/>- <a href="MQRouteOptions.html#">MQRouteOptions</a><BR/>- <a href="MQRouteResults.html#">MQRouteResults</a><BR/>- <a href="MQGeocodeOptionsCollection.html#">MQGeocodeOptionsCollection</a><BR/>- <a href="MQStringCollection.html#">MQStringCollection</a><BR/>- <a href="MQRecordSet.html#">MQRecordSet</a><BR/>- <a href="MQLatLngCollection.html#">MQLatLngCollection</a><BR/>- <a href="MQPointCollection.html#">MQPointCollection</a><BR/>- <a href="MQSearchCriteria.html#">MQSearchCriteria</a><BR/>- <a href="MQMapCommand.html#">MQMapCommand</a><BR/>- <a href="MQQualityType.html#">MQQualityType</a><BR/>- <a href="MQMatchType.html#">MQMatchType</a></UL>
+</UL>
+
+<HR/>
+<!-- END ADDITIONAL ATTRIBUTES  -->
+
+<!-- ========= CONSTRUCTOR DETAIL END ======== -->
+
+
+<!-- ============ METHOD DETAIL START ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+   <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+      <TD COLSPAN=1><FONT SIZE="+2">
+         <B>Method Detail</B></FONT>
+      </TD>
+   </TR>
+</TABLE>
+
+<!-- One single method detail entry -->
+
+   <A NAME="batchGeocode"><!-- --></A>
+   <H3>batchGeocode</H3>
+   <PRE>void <B>batchGeocode</B>(&lt;<a href="MQLocationCollection.html">MQLocationCollection</a>&gt; mqlcLocations, &lt;<a href="MQLocationCollectionCollection.html">MQLocationCollectionCollection</a>&gt; mqlccLocations, &lt;MQAutoGeocodeCovSwitch/MQGeocodeOptionsCollection&gt; theOptions)</PRE>
+   
+      <UL>Method to batch geocode a collection of locations. Geocode options supply
+ the QualityType and MatchType.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>mqlcLocations</CODE> -   The LocationCollection containing the  necessary info for the addresses to be geocode.  (Please Note:  This object will not be updated, it is simply used for the request.)   
+      </UL> 
+   
+     <UL><CODE>mqlccLocations</CODE> -   The LocationCollectionCollection  used to hold the results of the geocode.   
+      </UL> 
+   
+     <UL><CODE>theOptions</CODE> -   The AutoGeocodeCovSwitch or MQGeocodeOptionsCollection to select a set of  options stored on the server.  (Please Note:  This object will not be updated, it is simply used for the request.)   
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="createSessionEx"><!-- --></A>
+   <H3>createSessionEx</H3>
+   <PRE>String <B>createSessionEx</B>(&lt;<a href="MQSession.html">MQSession</a>&gt; mqsSession)</PRE>
+   
+      <UL>Generates a request to the MapQuest server (as specified by the
+ server name, path, and port number) to create a user Session.
+ The Session is assigned a unique identifier which is used to
+ access and update the Session information.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>mqsSession</CODE> -  Object containing objects for the session.  (Please Note:  This object will not be updated, it is simply used for the request.)   
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+   <UL>
+   <B>Returns:</B>
+        <UL>
+        The unique Session identifier.    
+        </UL>
+   </UL>
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="doRoute"><!-- --></A>
+   <H3>doRoute</H3>
+   <PRE>void <B>doRoute</B>(&lt;<a href="MQLocationCollection.html">MQLocationCollection</a>&gt; mqlcLocations, &lt;<a href="MQRouteOptions.html">MQRouteOptions</a>&gt; mqroOptions, &lt;<a href="MQRouteResults.html">MQRouteResults</a>&gt; mqrrResults, &lt;String&gt; strSessionUID, &lt;MQRectLL&gt; mqRectLL)</PRE>
+   
+      <UL>Calculates a route using a collection of locations as origin and
+ destination. These locations can be Address, GeoAddress,
+ Intersection, or GeoIntersection objects.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>mqlcLocations</CODE> -  Collection of locations.  (Please Note:  This object will not be updated, it is simply used for the request.)   
+      </UL> 
+   
+     <UL><CODE>mqroOptions</CODE> -  Route options object, to modify  behavior of route.  (Please Note:  This object will not be updated, it is simply used for the request.)   
+      </UL> 
+   
+     <UL><CODE>mqrrResults</CODE> -  The results of the route request.   
+      </UL> 
+   
+     <UL><CODE>strSessionUID</CODE> -  The unique Session ID.   
+      </UL> 
+   
+     <UL><CODE>mqRectLL</CODE> -  The bounding box to provide to the TileMap  ToolKit. This parameter is optional   
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="doRouteMatrix"><!-- --></A>
+   <H3>doRouteMatrix</H3>
+   <PRE>void <B>doRouteMatrix</B>(&lt;<a href="MQLocationCollection.html">MQLocationCollection</a>&gt; mqlcLocations, &lt;boolean&gt; bAllToAll, &lt;<a href="MQRouteOptions.html">MQRouteOptions</a>&gt; mqroOptions, &lt;<a href="MQRouteMatrixResults.html">MQRouteMatrixResults</a>&gt; mqrmrResults)</PRE>
+   
+      <UL>Calculates a route matrix. Either a drive time (many-to-many) or a
+ multi-destination (one-to-many) route.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>mqlcLocations</CODE> -  Collection of location objects.  The first member of the collection is the origin. If allToAll is true then  the last member is the destination. Each location must be a GeoAddress  (Please Note:  This object will not be updated, it is simply used for the request.)   
+      </UL> 
+   
+     <UL><CODE>bAllToAll</CODE> -  If true then a matrix of time and distance from  each location to all others is found. If false, time and distance from the  first location (origin) to all others is found.   
+      </UL> 
+   
+     <UL><CODE>mqroOptions</CODE> -  Specifies options for the route (fastest vs.  shortest, coverage to use, roads to avoid, etc.).  (Please Note:  This object will not be updated, it is simply used for the request.)   
+      </UL> 
+   
+     <UL><CODE>mqrmrResults</CODE> -  Contains the time and distance matrix as  well as the status of the call (success, failure, partial success)   
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="doTransaction"><!-- --></A>
+   <H3>doTransaction</H3>
+   <PRE>&nbsp;&lt;private&gt; void <B>doTransaction</B>(&lt;String&gt; strTransaction, &lt;<a href="Array.html">Array</a>&gt; arrRequest, strVersion )</PRE>
+   
+      <UL>Performs the given transaction by making AJAX call to the Proxy Server page.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>strTransaction</CODE> -  Name of the transaction   
+      </UL> 
+   
+     <UL><CODE>arrRequest</CODE> -  Array of request objects   
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="geocode"><!-- --></A>
+   <H3>geocode</H3>
+   <PRE>void <B>geocode</B>(&lt;<a href="MQAddress.html">MQAddress</a>&gt; mqaAddress, &lt;<a href="MQLocationCollection.html">MQLocationCollection</a>&gt; mqlcLocations, &lt;MQAutoGeocodeCovSwitch/MQGeocodeOptionsCollection&gt; theOptions)</PRE>
+   
+      <UL>Method to geocode an address or an intersection. Geocode options supply
+ the QualityType and MatchType.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>mqaAddress</CODE> -   The Address object containing the necessary info for  the address.  (Please Note:  This object will not be updated, it is simply used for the request.)   
+      </UL> 
+   
+     <UL><CODE>mqlcLocations</CODE> -   The LocationCollection to hold the results of the  geocode.   
+      </UL> 
+   
+     <UL><CODE>theOptions</CODE> -   The AutoGeocodeCovSwitch or MQGeocodeOptionsCollection to select a set of  options stored on the server.  (Please Note:  This object will not be updated, it is simply used for the request.)   
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="getProxyServerName"><!-- --></A>
+   <H3>getProxyServerName</H3>
+   <PRE>String <B>getProxyServerName</B>()</PRE>
+   
+      <UL>Returns the name or IP of the proxy server to connect to.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+   <UL>
+   <B>Returns:</B>
+        <UL>
+        The name of the proxy server.   
+        </UL>
+   </UL>
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="getRecordInfo"><!-- --></A>
+   <H3>getRecordInfo</H3>
+   <PRE>void <B>getRecordInfo</B>(&lt;<a href="MQStringCollection.html">MQStringCollection</a>&gt; mqscFieldNames, &lt;<a href="MQDBLayerQuery.html">MQDBLayerQuery</a>&gt; mqdlqQuery, &lt;<a href="MQRecordSet.html">MQRecordSet</a>&gt; mqrsResults, &lt;<a href="MQStringCollection.html">MQStringCollection</a>&gt; mqscRecIds)</PRE>
+   
+      <UL>Generates a request to the MapQuest server (as specified by the server
+ name, path, and port number) to perform a DB Search based on either the
+ recordIds received or the extraCriteria info of the dblayerquery. The
+ resulting recordset contains fields specified by the scFieldNames param.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>mqscFieldNames</CODE> -  containing the names of the fields  to return, or blank for all fields.  (Please Note:  This object will not be updated, it is simply used for the request.)   
+      </UL> 
+   
+     <UL><CODE>mqdlqQuery</CODE> -   Contains the name of the dblayer/table to query.  Optionally contains ExtraCriteria.  Utilized only if RecordIds are empty.  (Please Note:  This object will not be updated, it is simply used for the request.)   
+      </UL> 
+   
+     <UL><CODE>mqrsResults</CODE> -   The Returned RecordSet containg the records and  fields matching the input parameters.   
+      </UL> 
+   
+     <UL><CODE>mqscRecIds</CODE> -   RecordIdentifiers of the records to return  stored in a StringCollection.  (Please Note:  This object will not be updated, it is simply used for the request.)   
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="getRequestXml"><!-- --></A>
+   <H3>getRequestXml</H3>
+   <PRE>&nbsp;&lt;private&gt; void <B>getRequestXml</B>(&lt;String&gt; strTransaction, &lt;<a href="Array.html">Array</a>&gt; arrRequest, &lt;String&gt; strVersion)</PRE>
+   
+      <UL>Prepares request XML data to be sent to the server for a given transaction
+ and set of request objects.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>strTransaction</CODE> -  Name of the transaction   
+      </UL> 
+   
+     <UL><CODE>arrRequest</CODE> -  Array of request objects to form the XML   
+      </UL> 
+   
+     <UL><CODE>strVersion</CODE> -  Version of the transaction implementation   
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="getRouteBoundingBoxFromSessionResponse"><!-- --></A>
+   <H3>getRouteBoundingBoxFromSessionResponse</H3>
+   <PRE>&nbsp;&lt;private&gt; void <B>getRouteBoundingBoxFromSessionResponse</B>(sessionId, &lt;MQRectLL&gt; mqRectLL)</PRE>
+   
+      <UL>Sets the mqRectLL appropriately for tilemaps routing</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>mqRectLL</CODE> -  The bounding box for the route in the session.   
+      </UL> 
+   
+     <UL><CODE>strSessionUID</CODE> -  The unique Session ID.   
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="getServerInfo"><!-- --></A>
+   <H3>getServerInfo</H3>
+   <PRE>Document <B>getServerInfo</B>( &lt;int&gt; lType )</PRE>
+   
+      <UL>Returns the string which specifies the coverage information requested
+ directly via an http request.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>lType</CODE> -  Type of info to return,  0=CoverageInfo, 1=MapDataSelectorInfo.   
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+   <UL>
+   <B>Returns:</B>
+        <UL>
+        The string which specifies the server information.    
+        </UL>
+   </UL>
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="getServerName"><!-- --></A>
+   <H3>getServerName</H3>
+   <PRE>String <B>getServerName</B>()</PRE>
+   
+      <UL>Returns the name of the server which will be used to satisfy this
+ request.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+   <UL>
+   <B>Returns:</B>
+        <UL>
+        The name of the server which will be used to satisfy  this request.   
+        </UL>
+   </UL>
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="getServerPath"><!-- --></A>
+   <H3>getServerPath</H3>
+   <PRE>String <B>getServerPath</B>()</PRE>
+   
+      <UL>Returns the path to the server which will be used to satisfy this
+ request.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+   <UL>
+   <B>Returns:</B>
+        <UL>
+        The path to the  server which will be used to satisfy this  request.   
+        </UL>
+   </UL>
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="getServerPort"><!-- --></A>
+   <H3>getServerPort</H3>
+   <PRE>int <B>getServerPort</B>()</PRE>
+   
+      <UL>Returns the port number of the server which will be used to satisfy
+ this request.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+   <UL>
+   <B>Returns:</B>
+        <UL>
+        The port number of the server which will be used to satisfy             this request.   
+        </UL>
+   </UL>
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="getSession"><!-- --></A>
+   <H3>getSession</H3>
+   <PRE>void <B>getSession</B>(strSessionID, mqObj)</PRE>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="isAlive"><!-- --></A>
+   <H3>isAlive</H3>
+   <PRE>&nbsp;&lt;private&gt; boolean <B>isAlive</B>()</PRE>
+   
+      <UL>Returns a value indicating whether or not this object has been
+ initialized to a map server and port number.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+   <UL>
+   <B>Returns:</B>
+        <UL>
+        <code><b>true</b></code> if the port number or the Server          name is not equal to their uninitialized values, <code><b>          false</b></code> otherwise.    
+        </UL>
+   </UL>
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="reverseGeocode"><!-- --></A>
+   <H3>reverseGeocode</H3>
+   <PRE>void <B>reverseGeocode</B>(&lt;<a href="MQLatLng.html">MQLatLng</a>&gt; mqllLatLng, &lt;<a href="MQLocationCollection.html">MQLocationCollection</a>&gt; mqlcLocations, &lt;String&gt; strMapCovName, &lt;String&gt; strGeocodeCovName)</PRE>
+   
+      <UL>Finds the address at a given latitude/longitude position.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>mqllLatLng</CODE> -  The latitude/longitude position to use for  the reverse geocode.  (Please Note:  This object will not be updated, it is simply used for the request.)   
+      </UL> 
+   
+     <UL><CODE>mqlcLocations</CODE> -  A LocationCollection in  which to return the results of the reverse geocode.  It will contain  only GeoAddress objects.   
+      </UL> 
+   
+     <UL><CODE>strMapCovName</CODE> -  The name of the mapping coverage to be  used for the reverse geocode.   
+      </UL> 
+   
+     <UL><CODE>strGeocodeCovName</CODE> -  An optional parameter, specifies the  geocode coverage to use for the reverse geocode. If specified, using  this geocode coverage, a ZIP code lookup will be performed on the addresses  found in the mapping data to verify and fill in the city/state information  for the address. If not specified, only ZIP code and, if available, street  information found in the mapping data will be returned.   
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="search"><!-- --></A>
+   <H3>search</H3>
+   <PRE>void <B>search</B>(&lt;<a href="MQSearchCriteria.html">MQSearchCriteria</a>&gt; mqscCriteria, &lt;<a href="MQFeatureCollection.html">MQFeatureCollection</a>&gt; mqfcSearchResults, &lt;String&gt; strCoverageName, &lt;<a href="MQDBLayerQueryCollection.html">MQDBLayerQueryCollection</a>&gt; mqdlqcDbLayers, &lt;<a href="MQFeatureCollection.html">MQFeatureCollection</a>&gt; mqfcFeatures, &lt;<a href="MQDTCollection.html">MQDTCollection</a>&gt; mqdcDisplayTypes)</PRE>
+   
+      <UL>Generates a request to the MapQuest server (as specified by the
+ server name, path, and port number) to perform a search and
+ return the results in a FeatureCollection object.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>mqscCriteria</CODE> -   Spatial parameters for the search.  (Please Note:  This object will not be updated, it is simply used for the request.)   
+      </UL> 
+   
+     <UL><CODE>mqfcSearchResults</CODE> -  Search results.   
+      </UL> 
+   
+     <UL><CODE>strCoverageName</CODE> -   The name of the map data coverage if searching  for features in the map data.   
+      </UL> 
+   
+     <UL><CODE>mqdlqcDbLayers</CODE> -   Database parameters for the search.  (Please Note:  This object will not be updated, it is simply used for the request.)   
+      </UL> 
+   
+     <UL><CODE>mqfcFeatures</CODE> -   A FeatureCollection to also be searched  based on the spatial criteria.  (Please Note:  This object will not be updated, it is simply used for the request.)   
+      </UL> 
+   
+     <UL><CODE>mqdcDisplayTypes</CODE> -   A DTCollection to narrow the search. Only those  features with display types corresponding to those in this collection will be returned.  (Please Note:  This object will not be updated, it is simply used for the request.)   
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="setProxyServerName"><!-- --></A>
+   <H3>setProxyServerName</H3>
+   <PRE>void <B>setProxyServerName</B>(&lt;String&gt; strProxyServerName)</PRE>
+   
+      <UL>Sets the name or IP of the proxy server to connect to.
+ The name should not contain any leading or trailing slashes ("/").</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>strProxyServerName</CODE> -  The name of the proxy server.  
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="setServerName"><!-- --></A>
+   <H3>setServerName</H3>
+   <PRE>void <B>setServerName</B>(&lt;String&gt; strServerName)</PRE>
+   
+      <UL>Sets the name of the server which is to be used to satisfy this request.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>strServerName</CODE> -  The name of the MapQuest Server which is to  be used to satisfy this request.  
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="setServerPath"><!-- --></A>
+   <H3>setServerPath</H3>
+   <PRE>void <B>setServerPath</B>(&lt;String&gt; strServerPath)</PRE>
+   
+      <UL>Sets the path to the server which is to be used to satisfy this request.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>strServerPath</CODE> -   The path to the server which is to be used  to satisfy this request.  
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="setServerPort"><!-- --></A>
+   <H3>setServerPort</H3>
+   <PRE>void <B>setServerPort</B>(&lt;int&gt; nServerPort)</PRE>
+   
+      <UL>Sets the port number to the server which is to be used to satisfy this
+ request.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>nServerPort</CODE> -  The port number of the server which is to be                       used to satisfy this request.  
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+
+
+<!-- ============ METHOD DETAIL END ========== -->
+
+<!-- ========= END OF CLASS DATA ========= -->
+
+<!-- ========== START OF NAVBAR ========== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
+<TR>
+<TD COLSPAN=3 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">  <A HREF="overview-summary-mqexec.js.html"><FONT CLASS="NavBarFont1"><B>File</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-tree.html"><FONT CLASS="NavBarFont1"><b>Tree</b></FONT></A>&nbsp;</TD>
+  <!--TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"-->    <!--A HREF="deprecated-list.html"--><!--FONT CLASS="NavBarFont1">Deprecated</FONT--><!--/A--><!--&nbsp;</TD-->
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<B>MapQuest Advantage JavaScript API Reference Documentation</B>
+</EM>
+</TD
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="MQErrors.html"><B>PREV CLASS</B></A><!-- 
+   NEXT CLASS 
+-->
+&nbsp;<A HREF="MQFeature.html"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="index.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="MQExec.html" TARGET="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;
+<SCRIPT>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>
+</NOSCRIPT>
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+
+<!-- =========== END OF NAVBAR =========== -->
+
+<HR>
+<FONT SIZE="-1">
+
+</FONT>
+<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Fri Oct 19 08:54:32 2007</div>
+</BODY>
+</HTML>

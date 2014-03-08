@@ -1,0 +1,4 @@
+<ClientConfig>
+	<ClientConfigId>YOUR_CLIENT_ID</ClientConfigId>
+	<ClientConfigPassword>YOUR_PASSWORD</ClientConfigPassword>
+</ClientConfig>

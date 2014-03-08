@@ -1,0 +1,76 @@
+2012-05-06 03:02:09
+-------------------
+(live transaction) --> https://api-3t.paypal.com/nvp
+Request Headers: 
+Array
+(
+    [0] => Content-Type: text/namevalue
+    [1] => X-VPS-Timeout: 45
+    [2] => X-VPS-VIT-Client-Type: PHP/cURL
+    [3] => X-VPS-VIT-Integration-Product: PHP::Zen Cart(tm) - PayPal/NVP
+    [4] => X-VPS-VIT-Integration-Version: 1.3.9f
+)
+
+
+Request Parameters: {DoExpressCheckoutPayment} 
+Array
+(
+    [AMT] => 3.00
+    [ITEMAMT] => 3.00
+    [L_NUMBER0] => 
+    [L_NAME0] => Sinking Guy
+    [L_AMT0] => 1.00
+    [L_QTY0] => 3
+    [SHIPTONAME] => joshua dalton
+    [SHIPTOSTREET] => 311 happy valley rd.
+    [SHIPTOCITY] => johnson city
+    [SHIPTOSTATE] => TN
+    [SHIPTOZIP] => 37601
+    [SHIPTOCOUNTRYCODE] => US
+    [BUTTONSOURCE] => ZenCart-EC_us
+    [RETURNFMFDETAILS] => 0
+    [CUSTOM] => EC-9-1336316526
+    [INVNUM] => 9-1336316526-[MysteryGear]
+    [TOKEN] => EC-5N661079VX592543A
+    [PAYERID] => 2F3VZML5QYB8E
+    [PAYMENTACTION] => Sale
+    [NOTIFYURL] => http://www.sinkspots.org/gear/ipn_main_handler.php
+    [METHOD] => DoExpressCheckoutPayment
+    [CURRENCYCODE] => USD
+    [USER] => sinkspots_api1.yahoo.com
+    [PWD] => ****************
+    [VERSION] => 60.0
+    [SIGNATURE] => ****************************************************SzWr
+)
+
+
+Response: 
+Array
+(
+    [TOKEN] => EC-5N661079VX592543A
+    [SUCCESSPAGEREDIRECTREQUESTED] => false
+    [TIMESTAMP] => 2012-05-06T15:02:09Z
+    [CORRELATIONID] => e904922d9b829
+    [ACK] => Success
+    [VERSION] => 60.0
+    [BUILD] => 2860716
+    [TRANSACTIONID] => 5LN925925B152233V
+    [TRANSACTIONTYPE] => cart
+    [PAYMENTTYPE] => instant
+    [ORDERTIME] => 2012-05-06T15:02:08Z
+    [AMT] => 3.00
+    [FEEAMT] => 0.39
+    [TAXAMT] => 0.00
+    [CURRENCYCODE] => USD
+    [PAYMENTSTATUS] => Completed
+    [PENDINGREASON] => None
+    [REASONCODE] => None
+    [PROTECTIONELIGIBILITY] => Eligible
+    [INSURANCEOPTIONSELECTED] => false
+    [SHIPPINGOPTIONISDEFAULT] => false
+    [CURL_ERRORS] => 
+)
+
+
+DoExpressCheckoutPayment, Elapsed: 3081ms -- Success
+

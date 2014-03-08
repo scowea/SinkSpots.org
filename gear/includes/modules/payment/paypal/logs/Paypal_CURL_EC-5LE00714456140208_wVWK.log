@@ -1,0 +1,78 @@
+2011-09-16 02:32:09
+-------------------
+(live transaction) --> https://api-3t.paypal.com/nvp
+Request Headers: 
+Array
+(
+    [0] => Content-Type: text/namevalue
+    [1] => X-VPS-Timeout: 45
+    [2] => X-VPS-VIT-Client-Type: PHP/cURL
+    [3] => X-VPS-VIT-Integration-Product: PHP::Zen Cart(tm) - PayPal/NVP
+    [4] => X-VPS-VIT-Integration-Version: 1.3.9f
+)
+
+
+Request Parameters: {DoExpressCheckoutPayment} 
+Array
+(
+    [AMT] => 1.00
+    [ITEMAMT] => 1.00
+    [L_NUMBER0] => 
+    [L_NAME0] => Sink Deep Thoughts
+    [L_AMT0] => 1.00
+    [L_QTY0] => 1
+    [SHIPTONAME] => Scott Weaver
+    [SHIPTOSTREET] => 812 SE 45th AVe
+    [SHIPTOCITY] => Portland
+    [SHIPTOSTATE] => OR
+    [SHIPTOZIP] => 97215
+    [SHIPTOCOUNTRYCODE] => US
+    [BUTTONSOURCE] => ZenCart-EC_us
+    [RETURNFMFDETAILS] => 0
+    [CUSTOM] => EC-2-1316140326
+    [INVNUM] => 2-1316140326-[MysteryGear]
+    [TOKEN] => EC-5LE00714456140208
+    [PAYERID] => S3GM5YNHCL3GJ
+    [PAYMENTACTION] => Sale
+    [NOTIFYURL] => http://www.sinkspots.org/gear/ipn_main_handler.php
+    [METHOD] => DoExpressCheckoutPayment
+    [CURRENCYCODE] => USD
+    [USER] => sinkspots_api1.yahoo.com
+    [PWD] => ****************
+    [VERSION] => 60.0
+    [SIGNATURE] => ****************************************************SzWr
+)
+
+
+Response: 
+Array
+(
+    [TOKEN] => EC-5LE00714456140208
+    [NOTE] => dont fuck up my order..
+    [SUCCESSPAGEREDIRECTREQUESTED] => true
+    [TIMESTAMP] => 2011-09-16T02:32:09Z
+    [CORRELATIONID] => 7d1152186edec
+    [ACK] => Success
+    [VERSION] => 60.0
+    [BUILD] => 2085867
+    [TRANSACTIONID] => 63400931KS646013G
+    [RECEIPTID] => 1614-8615-3985-3789
+    [TRANSACTIONTYPE] => cart
+    [PAYMENTTYPE] => instant
+    [ORDERTIME] => 2011-09-16T02:32:08Z
+    [AMT] => 1.00
+    [FEEAMT] => 0.33
+    [TAXAMT] => 0.00
+    [CURRENCYCODE] => USD
+    [PAYMENTSTATUS] => Completed
+    [PENDINGREASON] => None
+    [REASONCODE] => None
+    [PROTECTIONELIGIBILITY] => Eligible
+    [INSURANCEOPTIONSELECTED] => false
+    [SHIPPINGOPTIONISDEFAULT] => false
+    [CURL_ERRORS] => 
+)
+
+
+DoExpressCheckoutPayment, Elapsed: 3044ms -- Success
+

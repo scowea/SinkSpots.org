@@ -1,0 +1,54 @@
+2012-03-06 03:16:40
+-------------------
+(live transaction) --> https://api-3t.paypal.com/nvp
+Request Headers: 
+Array
+(
+    [0] => Content-Type: text/namevalue
+    [1] => X-VPS-Timeout: 45
+    [2] => X-VPS-VIT-Client-Type: PHP/cURL
+    [3] => X-VPS-VIT-Integration-Product: PHP::Zen Cart(tm) - PayPal/NVP
+    [4] => X-VPS-VIT-Integration-Version: 1.3.9f
+)
+
+
+Request Parameters: {SetExpressCheckout} 
+Array
+(
+    [AMT] => 5.00
+    [ITEMAMT] => 5.00
+    [L_NUMBER0] => 
+    [L_NAME0] => Id Rather Be Under Water
+    [L_AMT0] => 1.00
+    [L_QTY0] => 5
+    [LOCALECODE] => US
+    [PAYMENTACTION] => Sale
+    [ALLOWNOTE] => 1
+    [LANDINGPAGE] => Billing
+    [RETURNURL] => http://www.sinkspots.org/gear/ipn_main_handler.php?type=ec
+    [CANCELURL] => http://www.sinkspots.org/gear/index.php?main_page=login&ec_cancel=1
+    [PAGESTYLE] => Primary
+    [METHOD] => SetExpressCheckout
+    [CURRENCYCODE] => USD
+    [USER] => sinkspots_api1.yahoo.com
+    [PWD] => ****************
+    [VERSION] => 60.0
+    [SIGNATURE] => ****************************************************SzWr
+)
+
+
+Response: 
+Array
+(
+    [TOKEN] => EC-83278824P8462252K
+    [TIMESTAMP] => 2012-03-06T15:16:40Z
+    [CORRELATIONID] => 7aba02bf2648
+    [ACK] => Success
+    [VERSION] => 60.0
+    [BUILD] => 2571254
+    [CURL_ERRORS] => 
+)
+
+
+SetExpressCheckout, Elapsed: 527ms -- Success
+
