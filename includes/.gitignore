@@ -1,4 +1,5 @@
 db_connect.php
+creds.php
 *.jpg
 *.JPG
 *.zip

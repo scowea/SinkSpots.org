@@ -12,9 +12,7 @@ error_reporting('E_ALL & ~E_DEPRECATED & ~ E_NOTICE');
 //error_reporting(1);
 ini_set('date.timezone', 'America/Los_Angeles');
 
-$_SESSION['db_name'] = 'sinkspots';
-$_SESSION['db_user'] = 'sinkspots';
-$_SESSION['db_pass'] = 'slink2Sink!';
+include('creds.php');
 
 // SINCE THIS FUNCTION IS INCLUDED IN EVERY PAGE, WE CAN PUT THE CONNECTION CODE HERE...
 db_connect();
