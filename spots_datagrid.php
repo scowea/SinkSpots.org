@@ -19,7 +19,7 @@
     ##  *** creating variables that we need for database connection 
       $DB_USER=$_SESSION['db_user'];            /* usually like this: prefix_name             */
       $DB_PASS=$_SESSION['db_pass'];           /* must be already encrypted (recommended)   */
-      $DB_HOST='localhost';               /* usually localhost                          */
+      $DB_HOST=$_SESSION['db_host'];               /* usually localhost                          */
       $DB_NAME=$_SESSION['db_name'];                /* usually like this: prefix_dbName           */
     
     //ob_start();
