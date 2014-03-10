@@ -4571,12 +4571,12 @@ function build_tab_navigation_list($currently_selected_id, $currently_selected_t
    			
    		  <ul>
           <li><a href=boats.php?spot_id=" .$currently_selected_id . ">Boats</a></li>        
-		  </ul>
-		  		
-		  <ul>		
-		  <li><a href=./gear?spot_id=" .$currently_selected_id . ">PRO SHOP</a></li>
-		  </ul>
-		  		
+		 </ul>
+		  ";		
+		 // <ul>		
+		 // <li><a href=./gear?spot_id=" .$currently_selected_id . ">PRO SHOP</a></li>
+		 // </ul>
+echo "		  		
 		 <ul>
           <li><a href=gatherings.php?spot_id=" .$currently_selected_id . ">Gatherings</a></li>
           </ul>
