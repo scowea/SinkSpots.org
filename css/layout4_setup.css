@@ -55,7 +55,7 @@ font-size:18;
 /********************/
 /*  HEADER SECTION  */
 /********************/
-.sitelogo {width:40px; height:40px; position:absolute; z-index:1; margin:22px 0 0 20px; background:url(../images/ss_logo_smaller.gif); }
+.sitelogo {width:43px; height:40px; position:absolute; z-index:1; margin:22px 0 0 20px; background:url(../images/ss_logo_smaller.gif); }
 .sitename {width:900px; height:45px; position:absolute; z-index:1; margin:20px 0 0 90px; overflow:visible !important /*Firefox*/; overflow:hidden /*IE6*/;}
 .sitename h1 {font-size:240%;}
 .sitename h2 {margin:-4px 0 0 0; color:rgb(125,125,125); font-size:120%;}
