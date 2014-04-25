@@ -40,8 +40,7 @@ pageTracker._trackPageview();
 } catch(err) {}</script>
 
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html  lang="en">
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -49,7 +48,7 @@ pageTracker._trackPageview();
   <meta http-equiv="expires" content="3600" />
   <meta name="revisit-after" content="2 days" />
   <meta name="robots" content="index,follow" />
-  <meta name="publisher" content="Simple Solutions Software" />
+  <meta name="publisher" content="eWeaver Solutions, LLC" />
   <meta name="copyright" content="2008" />
   <meta name="author" content="Simple Solutions Software" />
   <meta name="distribution" content="global" />
@@ -161,7 +160,7 @@ $bubble_text = $currently_selected_spot;
 if (($latitude == "43.0789") && ($longitude == "-79.0762"))
 	$bubble_text = "Find a mystery spot...";
 	
-	echo "<body onload=" ."'" . "load(" . '"' . $bubble_text . '","' . $latitude . '","' . $longitude . '","' . $zoom_level . '","' . $strCoordinates . '"' . ")" . "'" . " onunload='GUnload()' >";
+	echo "<body onload=" ."'" . "load(" . '"' . $bubble_text . '","' . $latitude . '","' . $longitude . '","' . $zoom_level . '","' . $strCoordinates . '"' . ")" . "'" . "  >";
 	//echo "<body >";
 	//echo $_SERVER['SCRIPT_NAME'] .'!!!!!!!!!!!';
 }
