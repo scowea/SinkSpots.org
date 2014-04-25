@@ -50,7 +50,7 @@ pageTracker._trackPageview();
   <meta name="robots" content="index,follow" />
   <meta name="publisher" content="eWeaver Solutions, LLC" />
   <meta name="copyright" content="2008" />
-  <meta name="author" content="Simple Solutions Software" />
+  <meta name="author" content="eWeaver Solutions, LLC" />
   <meta name="distribution" content="global" />
   <meta name="description" content="An interactive archive of mystery move spots." />
   <meta name="keywords" content="mystery move, squirt, squirt boating, squirt boat, charc, downtime, down time" />
@@ -259,10 +259,10 @@ else
 	  </div>
 
       <!-- A.4 HEADER BREADCRUMBS -->
-
       <!-- Breadcrumbs -->
       <div class="header-breadcrumbs">
-        
+        	
+
 
         <!-- Search form -->                  
         
@@ -274,9 +274,12 @@ else
     <!-- For alternative headers END PASTE here -->
 
 
+	
+
     <!-- B. MAIN -->
     <div class="main">
- 
+ <a href=index.php?spot_id=306 ><font color=orange size=5>Mystery Worlds 2014! @ Sparrow Cliffs - Saturday May 17th</font></a>
+<br><br>
       <!-- B.1 MAIN NAVIGATION -->
       <div class="main-navigation">
 
