@@ -34,7 +34,7 @@ include('header.php');
 			//***********************************************************
 			// GET all images for this spot_id....  
 			// ....we can assume that there is a folder that exists called .../images/"spot_id"
-			echo "<h1><font color=blue><b>Check It Out!</b> The Image gallery is way sweeter than it used to be!</font><b> Click below!!</b></h1>";
+			
 			echo "<h1>Images Of $currently_selected_spot:</h1>";
 			
 			// build the sql statement...
