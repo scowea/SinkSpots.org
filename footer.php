@@ -108,7 +108,7 @@
     <!-- C. FOOTER AREA -->      
 
     <div class="footer">
-      <p>Copyright &copy; 1978 <a href=http://simplesolutionsoftware.com target=_blank>Simple Solution Software</a> | <a href=http://lunarcharc.com target=_blank >Hosted by Lunar Charc</a></p>
+      <p>Copyright &copy; 2005 <a href=http://eWeaverSolutions.com target=_blank>eWeaver Solutions, LLC</a> All rights reserved.</p>
      
     </div>      
   </div> 
