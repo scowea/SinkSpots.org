@@ -52,7 +52,7 @@ include('header.php');
                   <TR> 
                     <TD align="LEFT"><img src="./flags/gif/us.gif" alt= "US" title="United States" /> 
                       <strong>Angst Board:</strong></TD >
-                    <TD align="LEFT"> <font color=#0000FF>><(((°></font> </TD>
+                    <TD align="LEFT"> <font color=#0000FF>><(((ï¿½></font> </TD>
                     <td align="center"> [<a href=http://www.angstkayak.com/messageboard/index.html  target="_blank"><strong>English</strong></font></a>] 
                     </td>
                     <td align="center"> [<a href=http://74.125.93.104/translate_c?hl=fr&sl=en&u=http://www.angstkayak.com/messageboard/index.html  target="_blank"><font color=#0000FF>French</font></a>] 
@@ -67,7 +67,7 @@ include('header.php');
                   <TR> 
                     <TD align="LEFT"><img src="./flags/gif/gb.gif" alt= "GB" title="Great Britain" /> 
                       <strong>Downtime Board:</strong></TD >
-                    <TD align="LEFT"> <font color=#0000FF>><(((°></font> </TD>
+                    <TD align="LEFT"> <font color=#0000FF>><(((ï¿½></font> </TD>
                     <td align="left">[<a href=http://www.downtimekayaks.com/forum/viewforum.php?f=1  target="_blank"><strong>English</strong></a>] 
                     </td>
                     <td align="left"> [<a href=http://74.125.93.104/translate_c?hl=fr&sl=en&u=http://www.downtimekayaks.com/forum/viewforum.php?f=1  target="_blank"><font color=#0000FF>French</font></a>] 
@@ -82,7 +82,7 @@ include('header.php');
                   <TR> 
                     <TD align="LEFT"><img src="./flags/gif/us.gif" alt= "US" title="United States" /> 
                       <strong>CBoats Board:</strong></TD>
-                    <TD align="LEFT"> <font color=#0000FF><°)))><</font> </TD>
+                    <TD align="LEFT"> <font color=#0000FF><ï¿½)))><</font> </TD>
                     <TD align="left"> [<a href=http://www.cboats.net/cforum/viewforum.php?f=2  target="_blank"><strong>English</strong></a>] 
                     </TD>
                     <TD align="left"> [<a href=http://74.125.93.104/translate_c?hl=fr&sl=en&u=http://www.cboats.net/cforum/viewforum.php?f=2  target="_blank"><font color=#0000FF>French</font></a>] 
@@ -97,7 +97,7 @@ include('header.php');
                   <TR> 
                     <TD align="LEFT"><img src="./flags/gif/us.gif" alt= "US" title="United States" /> 
                       <strong>Playak Board Search:</strong></TD >
-                    <TD align="LEFT"> <font color=#0000FF><°)))><</font> </TD>
+                    <TD align="LEFT"> <font color=#0000FF><ï¿½)))><</font> </TD>
                     <TD align="left"> [<a href=http://playak.com/paddle-news.php?cat=Forums&lg=en&search=squirt  target="_blank"><strong>English</strong></a>] 
                     </TD>
                     <TD align="left"> [<a href=http://74.125.93.104/translate_c?hl=fr&sl=en&u=http://playak.com/paddle-news.php?cat=Forums&lg=en&search=squirt  target="_blank"><font color=#0000FF>French</font></a>] 
@@ -112,7 +112,7 @@ include('header.php');
                   <TR> 
                     <TD align="LEFT"><img src="./flags/gif/fr.gif" alt= "France" title="France" /> 
                       <strong>Skunk Board:</strong></TD >
-                    <TD align="LEFT"><font color=#0000FF>><(((°></font></TD>
+                    <TD align="LEFT"><font color=#0000FF>><(((ï¿½></font></TD>
                     <TD align="left"> [<a href=http://74.125.93.104/translate_c?hl=en&sl=fr&u=http://www.villecourt.com/squirt/forum/list.php?2 target="_blank"><font color=#0000FF>English</font></a>] 
                     </TD>
                     <TD align="left"> [<a href=http://www.villecourt.com/squirt/forum/list.php?2  target="_blank"><strong>French</strong></a>] 
@@ -127,7 +127,7 @@ include('header.php');
                   <TR> 
                     <TD align="LEFT"><img src="./flags/gif/jp.gif" alt= "Japan" title="Japan" /> 
                       <strong>Bomber Shiro Blog:</strong></TD >
-                    <TD align="LEFT"><font color=#0000FF>><(((°></font></TD>
+                    <TD align="LEFT"><font color=#0000FF>><(((ï¿½></font></TD>
                     <TD align="left"> [<a href=http://translate.google.com/translate?hl=en&sl=ja&u=http://godeep.exblog.jp target="_blank"><font color=#0000FF>English</font></a>] 
                     </TD>
                     <TD align="left"> [<a href=http://translate.google.com/translate?hl=fr&sl=ja&u=http://godeep.exblog.jp  target="_blank"><font color=#0000FF>French</font></a>] 
@@ -142,7 +142,7 @@ include('header.php');
                   <TR> 
                     <TD align="LEFT"><img src="./flags/gif/jp.gif" alt= "Japan" title="Japan" /> 
                       <strong>Deepster Blog:</strong></TD >
-                    <TD align="LEFT"><font color=#0000FF><°)))><</font></TD>
+                    <TD align="LEFT"><font color=#0000FF><ï¿½)))><</font></TD>
                     <TD align="left"> [<a href=http://translate.google.com/translate?hl=en&sl=ja&u=http://deepster.xii.jp target="_blank"><font color=#0000FF>English</font></a>] 
                     </TD>
                     <TD align="left"> [<a href=http://translate.google.com/translate?hl=fr&sl=ja&u=http://deepster.xii.jp  target="_blank"><font color=#0000FF>French</font></a>] 
@@ -157,7 +157,7 @@ include('header.php');
                   <TR> 
                     <TD align="LEFT"><img src="./flags/gif/jp.gif" alt= "Japan" title="Japan" /> 
                       <strong>Squirtist Blog:</strong></TD >
-                    <TD align="LEFT"><font color=#0000FF><°)))><</font></TD>
+                    <TD align="LEFT"><font color=#0000FF><ï¿½)))><</font></TD>
                     <TD align="left"> [<a href=http://translate.google.com/translate?hl=en&sl=ja&u=http://sakurazaka.cocolog-nifty.com/ target="_blank"><font color=#0000FF>English</font></a>] 
                     </TD>
                     <TD align="left"> [<a href=http://translate.google.com/translate?hl=fr&sl=ja&u=http://sakurazaka.cocolog-nifty.com/  target="_blank"><font color=#0000FF>French</font></a>] 
@@ -172,7 +172,7 @@ include('header.php');
                   <TR> 
                     <TD align="LEFT"><img src="./flags/gif/jp.gif" alt= "Japan" title="Japan" /> 
                       <strong>Fun Forever:</strong></TD >
-                    <TD align="LEFT"><font color=#0000FF><°)))><</font></TD>
+                    <TD align="LEFT"><font color=#0000FF><ï¿½)))><</font></TD>
                     <TD align="left"> [<a href=http://74.125.93.104/translate_c?hl=en&sl=ja&u=http://www.fun-forever.com target="_blank"><font color=#0000FF>English</font></a>] 
                     </TD>
                     <TD align="left"> [<a href=http://74.125.93.104/translate_c?hl=fr&sl=ja&u=http://www.fun-forever.com  target="_blank"><font color=#0000FF>French</font></a>] 
@@ -187,7 +187,7 @@ include('header.php');
                   <TR> 
                     <TD align="LEFT"><img src="./flags/gif/jp.gif" alt= "Japan" title="Japan" /> 
                       <strong>Squirt Together:</strong></TD >
-                    <TD align="LEFT"><font color=#0000FF>><(((°></font></TD>
+                    <TD align="LEFT"><font color=#0000FF>><(((ï¿½></font></TD>
                     <TD align="left"> [<a href=http://74.125.93.104/translate_c?hl=en&sl=ja&u=http://squirtogether.blog.drecom.jp/ target="_blank"><font color=#0000FF>English</font></a>] 
                     </TD>
                     <TD align="left"> [<a href=http://74.125.93.104/translate_c?hl=fr&sl=ja&u=http://squirtogether.blog.drecom.jp/  target="_blank"><font color=#0000FF>French</font></a>] 
@@ -204,7 +204,7 @@ include('header.php');
                 <br>
                 <br>
               </div>
-              <strong>Forum:</strong> <?php echo "<iframe src=http://weaver.lunarcharc.com/phorum-5.2.6a/index.php width=750 height=800 style=font-size: 12pt></iframe><br>"; ?> 
+ 
               <div align="center"> <br>
                 <table>
                   <tr> 
