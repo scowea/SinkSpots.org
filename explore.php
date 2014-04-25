@@ -91,7 +91,7 @@ $_SESSION['NAV_BUTTON_TEXT'] = 'Gatherings';
 			// add a marker on the map for every spot in the db....
 			addMarkersForAllSpots(strCoordinates);
 			
-			// shit for the directions
+			// code for the directions
 			gdir = new GDirections(map, document.getElementById("directions"));
         	//GEvent.addListener(gdir, "load", onGDirectionsLoad);
         	GEvent.addListener(gdir, "error", handleErrors);
@@ -351,15 +351,7 @@ include('header.php');
           </table>
         </div>
         <hr>
-        <font color="#0000FF"><b>Mapquest Map:</b> This is in beta mode... we 
-        added it because <em>sometimes</em> mapquest has better resolution on 
-        satellite images than google maps does, but not usually it seems. Please 
-        only use this as a visual reference. Continue to use the google maps above 
-        for updating lat/long, the initial zoom, and for getting directions to 
-        a particular spot. ~ Admin</font><br>
-        <div align="center"> 
-          <div id="mapquestMapDiv" style="width: 800px; height: 600px"></div>
-        </div>
+        
         <!-- end div align="center"  -->
         <?PHP 
 	  		// DEBUGGING CODE: show what all the coordinates are for every spot in the db:
