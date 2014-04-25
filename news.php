@@ -213,16 +213,8 @@ include('header.php');
                   </tr>
                   <tr> 
                     <td>Email: </td>
-                    <td><a href="mailto:sinkspots@yahoo.com"><font color=#0000FF>sinkspots@yahoo.com</font></a></td>
-                  </tr>
-                  <tr> 
-                    <td>AIM: </td>
-                    <td align=left><font color=#0000FF>SinkSpots13</font></td>
-                  </tr>
-                  <tr> 
-                    <td>YahooIM: </td>
-                    <td align=left><font color=#0000FF>SinkSpots</font></td>
-                  </tr>
+                    <td><a href="mailto:sinkspots@gmail.com"><font color=#0000FF>sinkspots@gmail.com</font></a></td>
+                  </tr>             
                   <tr> 
                     <td>Facebook: </td>
                     <td align=left><a href=http://www.facebook.com/people/Sink-Spots/100000239166539 target=_blank><img src="images/FaceBook-32x32.png" /></a></td>
