@@ -20,7 +20,7 @@ $_SESSION['NAV_BUTTON_TEXT'] = 'Gatherings';
 ?>	
 	
  <script type="text/javascript" src="includes/js/prototype.js"></script>
-<script type="text/javascript" src="javascript"></script>
+
 
 <!-- BEGIN GOOGLE MAP API.... -->	
 <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAJbtRcONEO0fN-qCTjDZ4sBRCHqwBfhDRZKas_NAmFeIlpDFvuhSWSA3odgyzyx4rE02SEVWroizJ5A" type="text/javascript">
@@ -29,8 +29,7 @@ $_SESSION['NAV_BUTTON_TEXT'] = 'Gatherings';
 
 
 <!-- BEGIN MAPQUEST MAP API.... -->
-<script src="http://btilelog.access.mapquest.com/tilelog/transaction?transaction=script&key=mjtd%7Clu6ynu622l%2Cr5%3Do5-0yy50&itk=true&v=5.3.s&ipkg=controls1,traffic&ipr=false" type="text/javascript">
-</script>
+
 <!-- END MAPQUEST MAP API.... -->
 
 
@@ -44,45 +43,7 @@ $_SESSION['NAV_BUTTON_TEXT'] = 'Gatherings';
     function load(strBubble, strLat, strLong, strZoom_Level, strCoordinates) 
 	{
 	
-		//#############################################################################
-		// MAPQUEST MAP
-		// add the map....
-		myMapquestMap = new MQA.TileMap(document.getElementById('mapquestMapDiv'),parseInt(strZoom_Level-3),new MQA.LatLng(strLat, strLong),"hyb");
 		
-		// add a large zoom controll
-		myMapquestMap.addControl(new MQA.LargeZoomControl());
-
-		//add traffic control, the easiest way to add traffic to your map
-   		//myMapquestMap.addControl(new MQA.TrafficControl());
-		
-		//Create a map view type control
-		myVControl = new MQA.ViewControl(myMapquestMap);
-		//Display control specifying the CornerPlacement, and an MQA.Size object to define X,Y offset
-		myMapquestMap.addControl(myVControl, new MQA.MapCornerPlacement(MQA.MapCorner.TOP_RIGHT, new MQA.Size(20,20)));
-
-		//..................................
-		// add a point of interest and a bubble info about it
-		//...............................
-		// get a lat/lng location...
-		var newCenterLL = new MQA.LatLng(strLat, strLong);
-
-		//Create a new MQA.Poi object and set its location
-		myPoint = new MQA.Poi(newCenterLL);
-		
-		//set any rollover and pop-up text
-		myPoint.setValue('infoTitleHTML', strBubble);
-		//myPoint.setValue('infoContentHTML','The City So Nice, They Named it Twice!');
-		
-		//you can set a Key value to help keep track of the POIs you put on the map
-		myPoint.setValue('key','1A');
-		
-		//Add the POI to the map
-		myMapquestMap.addShape(myPoint);
-		
-		//..........................................
-		// add traffic control   
-   		myMapquestMap.addControl(new MQA.TrafficControl());
-
 	
 	 	//########################################################
 	    // GOOGLE MAP
@@ -124,7 +85,7 @@ $_SESSION['NAV_BUTTON_TEXT'] = 'Gatherings';
 			// set the map type to be the satillite. Valid values: [G_NORMAL_MAP,G_SATELLITE_MAP,G_HYBRID_MAP,G_DEFAULT_MAP_TYPES]
 			// add the terrain button....
 			map.addMapType(G_PHYSICAL_MAP);
-			map.addMapType(WMS_TOPO_MAP);
+			//map.addMapType(WMS_TOPO_MAP);
 			map.setMapType(G_HYBRID_MAP); // but initialy set it to the hybrid view...
 			
 			// add a marker on the map for every spot in the db....
@@ -182,7 +143,7 @@ $_SESSION['NAV_BUTTON_TEXT'] = 'Gatherings';
 		return this.baseUrl + '?VERSION=1.1.1&REQUEST=GetMap&LAYERS=' + this.layer + '&STYLES=&SRS=EPSG:4326&BBOX=' + bbox + '&WIDTH=256&HEIGHT=256&FORMAT=image/jpeg&BGCOLOR=0xCCCCCC&EXCEPTIONS=INIMAGE';
 	}
 	
-	var WMS_TOPO_MAP = WMSCreateMap( 'Topo', 'Imagery by USGS / Web Service by TerraServer', 'http://www.terraserver-usa.com/ogcmap6.ashx', 'DRG', 3, 17, 't' );
+	//var WMS_TOPO_MAP = WMSCreateMap( 'Topo', 'Imagery by USGS / Web Service by TerraServer', 'http://www.terraserver-usa.com/ogcmap6.ashx', 'DRG', 3, 17, 't' );
 
 
 
