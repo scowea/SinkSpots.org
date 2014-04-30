@@ -53,12 +53,12 @@ Imagine how good you will feel, by helping to offest the cost of keeping this we
 <br><br><br><br>
 <p>
   <strong><u>Some thing isn't working right!</u></strong><br>
-  Please understand that this site is in BETA mode... meaning, I am frequently 
+  Please understand that this site is in BETA mode... meaning, we am frequently 
   updating the site adding new features, so I may inadvertently break something 
-  and not realize it. So if you see something not behaving correctly, shoot me 
-  an <a href="mailto:dont_get_trashed@yahoo.com"><font color="#0000FF">email</font></a> 
-  and ill fix it. Also, I am very receptive to any ideas/comments/suggestions 
-  about how to make this more functional or easy to use.. so please let me know. 
+  and not realize it. So if you see something not behaving correctly, shoot us 
+  an <a href="mailto:info@sinkspots.org"><font color="#0000FF">email</font></a> 
+  and we will fix it. Also, we are very receptive to any ideas/comments/suggestions 
+  about how to make this more functional or easy to use.. so please let us know. 
   <br>
   <br>
   <?php

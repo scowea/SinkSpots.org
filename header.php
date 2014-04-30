@@ -216,7 +216,7 @@ else
 		  
           <li><a title="User Settings" href=settings_maintenance.php?spot_id=" . $spot_id . ">Settings</a></li>
           <li><a title="Get to know who we are" href=about.php?spot_id=" . $spot_id . ">About</a></li>
-          <li><a href="mailto:sinkspots@yahoo.com" title="Get in touch with us">Contact</a></li>
+          <li><a href="mailto:info@sinkspots.org" title="Get in touch with us">Contact</a></li>
         </ul>
       </div>              
       </div>

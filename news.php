@@ -213,7 +213,7 @@ include('header.php');
                   </tr>
                   <tr> 
                     <td>Email: </td>
-                    <td><a href="mailto:sinkspots@gmail.com"><font color=#0000FF>sinkspots@gmail.com</font></a></td>
+                    <td><a href="mailto:info@sinkspots.org"><font color=#0000FF>info@sinkspots.org</font></a></td>
                   </tr>             
                   <tr> 
                     <td>Facebook: </td>
@@ -226,7 +226,7 @@ include('header.php');
                 </table>
               </div>
               <br>
-              <div align="center"> If you have any ideas, <a href="mailto:sinkspots@yahoo.com">email</a> 
+              <div align="center"> If you have any ideas, <a href="mailto:info@sinkspots.org">email</a> 
                 me and ill put it on the list... <br>
                </div>
               </div>

@@ -144,8 +144,8 @@ function ValidateMyDate($rawMonth, $rawDay, $rawYear)
 function email_message($message, $subject)
 {
 	// this code writes a email..
-	$to = "dont_get_trashed@yahoo.com";  // who are we emailing?
-	$from = "admin@streamweaver.com";	// who is it from? this will be in the body of the email...
+	$to = "info@sinkspots.org";  // who are we emailing?
+	$from = "delete@sinkspots.org";	// who is it from? this will be in the body of the email...
 	$headers = "From: $from";
 	mail($to,$subject,$message,$headers);
 } // end function email_message($message, $subject)
