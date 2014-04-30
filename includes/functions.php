@@ -8,7 +8,7 @@
 
 //ini_set('error_reporting', 0);
 //error_reporting(0);
-error_reporting('E_ALL & ~E_DEPRECATED & ~ E_NOTICE');
+error_reporting('0');
 //error_reporting(1);
 ini_set('date.timezone', 'America/Los_Angeles');
 
